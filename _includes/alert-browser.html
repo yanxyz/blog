@@ -1,0 +1,11 @@
+<script type="text/template" id="template-alert-browser">
+  <section id="alert-browser">
+    <p>你的浏览器太旧了，请使用最新的<a href="http://pc.qq.com/search.html#!keyword=谷歌浏览器" target="_blank">谷歌浏览器</a>访问。</p>
+  </section>
+</script>
+
+<script>
+  if (!String.raw) {
+    document.body.insertAdjacentHTML('afterbegin', document.getElementById('template-alert-browser').text)
+  }
+</script>
