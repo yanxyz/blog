@@ -4,8 +4,6 @@ permalink: /python/lang/statements/
 
 # Python Statements
 
-Python 的代码规范，`{` 和 `}` 单独一行。
-
 ## if
 
 if 语句可以用单行语句

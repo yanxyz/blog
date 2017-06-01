@@ -12,9 +12,7 @@ init() {
 }
 
 update() {
-    git add .
-    git commit -m "Amendment"
-    git push
+
 }
 
 build() {

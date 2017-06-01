@@ -56,10 +56,6 @@ pluginbasedir=%COMMANDER_PATH%\Plugins
 
 ## 用法
 
-### 用户命令
-
-[ConEmu](../conemu/index.md#total-commander)
-
 ### 自定义文件类型
 
 TC 可以将满足一定条件的文件指定为一个类型。可以对这个文件类型过滤显示、单独配色，关联程序等。
@@ -85,3 +81,31 @@ TC 可以将满足一定条件的文件指定为一个类型。可以对这个�
 
 - 路径为 `%COMMANDER_EXE%`。注意系统需要添加这个环境变量
 - 参数为 `/O /T /S /L=$FilePath$` 这里 `$FilePath$` 为 WebStorm 的变量，其它程序会有相应的变量。
+
+### 打开命令提示符 {#cmd}
+
+TC 有内部命令 `cm_ExecuteDOS`，可以在当前目录打开命令提示符。
+
+怎么以管理员身份打开命令提示符呢？
+
+编辑 usercmd.ini 添加外部命令
+
+```ini
+[em_ECP]
+# * 表示以以管理员身份打开命令
+cmd=*%COMSPEC% /k
+param=cd /d %P
+menu=Open Elevated Command Prompt
+```
+
+在 TC 中，命令可以用于 start menu, toolbar button, shortcuts 等地方。
+
+编辑 wincmd.ini 添加快捷键
+
+```ini
+[Shortcuts]
+F12=cm_ExecuteDOS
+CS+F12=em_ECP
+```
+
+命令提示符不好用，我用 [ConEmu](../conemu/index.md) 替换它。

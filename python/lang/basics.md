@@ -6,7 +6,7 @@ permalink: /python/lang/basic/
 
 标识符区分大小写。比如常量 None, False, True。
 
-以 `#` 开始的是注释：
+注释：
 
 ```py
 # 注释

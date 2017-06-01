@@ -10,7 +10,7 @@
 编辑器
 
 - [Sublime Text](sublimetext/index.md)
-- [Visual Studio Code](vscode/index.md)
+- [VSCode](vscode/index.md)
 - [Atom](atom/index.md)
 - [Notepad++](npp/index.md)
 - [Vim](vim/index.md)

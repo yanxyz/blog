@@ -51,11 +51,11 @@ Console 的字体为 putty 决定，而不是 ConEmu。
 
 ## Total Commander
 
-如何在当前目录“打开 ConEmu”？
+如何在当前目录打开 ConEmu？更重要的是如何打开相关 shell(task)？
 
-我在 [Total Commander](../totalcmd/index.md) 中这么做：
+我平常使用 [Total Commander](../totalcmd/index.md) ，下面是具体做法。
 
-第一步，编辑 `usercmd.ini`，添加外部命令：
+编辑 `usercmd.ini`，添加外部命令：
 
 ```ini
 [em_ConEmuCMD]
@@ -67,9 +67,11 @@ cmd=%Commander_Path%\Tools\ConEmu\ConEmu.exe
 param=-Single -run {Git bash}
 ```
 
-param 指定 [ConEmu 命令行参数](http://conemu.github.io/en/ConEmuArgs.html)
+param 指定 [ConEmu 命令行参数](http://conemu.github.io/en/ConEmuArgs.html)。
 
-第二步，外部命令可以用在 Start Menu, Button bar 等，也可以绑定快捷键，编辑 `wincmd.ini`
+在 TC 中，命令可以用于 start menu, toolbar button, shortcuts 等地方。
+
+编辑 `wincmd.ini` 添加快捷键
 
 ```ini
 [Shortcuts]
@@ -77,4 +79,4 @@ F12=em_ConEmuCMD
 C+F12=em_ConEmuGitBash
 ```
 
-Total Commander 的 source 目录即为 ConEmu 的当前工作目录。
+TC 的当前目录即 ConEmu 的当前工作目录。
