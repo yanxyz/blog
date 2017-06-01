@@ -1,3 +1,6 @@
+---
+permalink: /shell/alias/
+---
 
 # alias
 

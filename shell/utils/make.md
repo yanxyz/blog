@@ -1,5 +1,5 @@
 ---
-permalink: /shell/make
+permalink: /shell/make/
 ---
 
 # make

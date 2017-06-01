@@ -2,7 +2,7 @@
 permalink: /ruby/install/
 ---
 
-# 安装 ruby
+# 安装 Ruby
 
 ## Windows
 
@@ -32,3 +32,7 @@ ruby dk.rb install
 gem install json --platform=ruby
 ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
 ```
+
+## Ubuntu
+
+可以用 [RVM](https://rvm.io/) 管理多个 Ruby 版本。
