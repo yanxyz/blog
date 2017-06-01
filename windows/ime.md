@@ -4,7 +4,7 @@
 
 点击系统托盘里输入法图标，点击“语言首选项”，这里可以添加语言。点击某个语言，这里可以添加键盘。简体中文系统自带拼音输入和五笔输入两种键盘（输入法）。
 
-在 Cortana 中输入“语言”，点击找到的“语言控制面板”，点击左侧导航中的“高级设置”：
+运行 `control /name Microsoft.Language` 打开“控制面板\时钟、语言和区域\语言”，点击左侧导航中的“高级设置”：
 
 ![](/uploads/windows/control-language.png)
 
@@ -14,14 +14,18 @@
 
 ![](/uploads/windows/control-language-hotkeys.png)
 
-`Win + 空格` | 切换输入语言和键盘（即所有的输入法）
-`左 Alt + Shift` | 切换输入语言
-`Ctrl + Shift` | 切换键盘（输入语言不变）
-`Ctrl + 空格` | 中文输入法，切换中英文输入
+`Win+Space` | 切换输入语言和键盘（即所有的输入法）
+`Left Alt+Shift` | 切换输入语言
+`Ctrl+Shift` | 切换键盘（输入语言不变）
+`Ctrl+Space` | 中文输入法，切换中英文输入
+
+## 微软拼音输入法
 
 Win10 微软拼音输入法占用的快捷键：
 
-- `Ctrl + Space` 切换中英文输入，这个快捷键无法取消（取消后自动恢复）
-- `Ctrl + Shift + F` 切换简繁体
+- `Ctrl+Space` 切换中英文输入，这个快捷键无法取消（取消后自动恢复）
+- `Ctrl+Shift+F` 切换简繁体
 
 这些快捷键也是代码 IDE 常用快捷键。我目前的办法是添加“英语”语言，在 IDE 中使用“英语”语言。
+
+Win10 1703 微软拼音输入法的设置可以取消 `Ctrl+Shift+F` 等快捷键，但是 `Ctrl+Space` 仍然不能取消。

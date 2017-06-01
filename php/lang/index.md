@@ -9,6 +9,7 @@
 - [数组](arrays.md)
 - [表达式](expressions.md)
 <!-- - [语句](statements.md) -->
+- [函数](functions.md)
 <!-- - [异常](exceptions.md) -->
 
 ## 参考

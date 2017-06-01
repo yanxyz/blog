@@ -4,7 +4,7 @@ permalink: /shell/curl/
 
 # curl
 
-curl 除了用来下载文件外，也可以作为网络开发工具。
+curl 是下载工具，也可以作为 web 开发工具。
 
 ## 安装
 
@@ -15,8 +15,8 @@ git-bash (Git for Windows) 已包含。
 帮助
 
 ```sh
-curl --help
-curl --help | grep -- -s,
+curl --help # 帮助很长
+curl --help | grep -- -s, # 搜索选项
 ```
 
 下载文件
@@ -26,7 +26,7 @@ curl -o filename url
 curl -sSLO url
 ```
 
-测试网络服务
+测试 web API
 
 - [Github API Docs](https://developer.github.com/v3/)
 

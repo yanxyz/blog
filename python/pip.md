@@ -14,7 +14,7 @@ pip 是 Python 的包安装器。
 
 Python 2.7.9/3.4 开始默认安装 pip。升级：
 
-```cmd
+```sh
 python -m pip install -U pip
 ```
 

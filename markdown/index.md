@@ -8,18 +8,14 @@ Markdown 是一种轻量级的标记语言。“轻量”是相对于 HTML、XML
 
 编辑器：
 
-- Windows 上可以试试 [MarkdownPad](http://markdownpad.com/)
-- Mac 上可以试试 [Mou](http://25.io/mou/)
+- Windows: [MarkdownPad](http://markdownpad.com/)
+- Mac: [Mou](http://25.io/mou/)
 
 国内[简书](http://www.jianshu.com/)这类专注于写作的网站支持 Markdown。
 
 ## 对于程序员
 
-看看如何在 Github 上[玩转 Markdown](https://guides.github.com/features/mastering-markdown/)。了解 [GitHub Flavored Markdown](https://github.com/cssmagic/blog/issues/13)。
-
-常用的代码编辑器一般都有插件支持 Markdown。
-
-技术问答网站，比如 [StackOverflow](http://stackoverflow.com/), [SegmentFault](http://segmentfault.com/) 等支持 Markdown。
+了解 [Github Markdown](../github/markdown.md)。
 
 ## 对于开发者
 

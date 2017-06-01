@@ -6,8 +6,8 @@ permalink: /github/markdown/
 
 语法
 
-- <https://guides.github.com/features/mastering-markdown/>
-- <https://help.github.com/articles/basic-writing-and-formatting-syntax/>
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+- [Basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 语法高亮[支持的语言](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 

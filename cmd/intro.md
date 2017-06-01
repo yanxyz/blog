@@ -12,14 +12,12 @@ Windows 命令提示符（command prompt）通常是 cmd.exe，具体得看
 echo %ComSpec%
 ```
 
-Windows 将来的版本可能会改为 PowerShell。
+## 如何在当前目录打开？
 
-## 如何打开？
+Win10 1703 已将 “打开命令提示符” 替换为 “打开 PowerShell"
 
-在 Windows 10 下：
-
-- 开始菜单，上下文菜单有两项：**命令提示符**，**命令提示符（管理员）**。
-- 资源管理器，菜单 **文件 > 打开命令提示符** 有两项，**打开命令提示符** 和 **以管理员身份打开命令提示符**。
+- 开始菜单的右键菜单, `win+x`
+- 资源管理器的**文件**菜单
 
 在 Total Commander 中使用快捷键更方便，[见这里](../software/totalcmd/index.md#cmd)。
 
