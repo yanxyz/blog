@@ -66,3 +66,11 @@ node.exe --version
 # 如果命令路径中有空格，需要用引号包裹，用 & 调用命令
 & "C:\Program Files\nodejs\node.exe"
 ```
+
+## 三元操作符
+
+PowerShell 不支持 `?:` 三元操作符。
+
+```powershell
+$a = if ($true) { 'a' } else { '' }
+```

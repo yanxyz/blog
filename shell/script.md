@@ -30,16 +30,30 @@ echo "hello shell"
 chmod +x hello.sh
 ```
 
-然后，shell 读取 shebang。`#!/bin/sh` 表示要以 `/bin/sh` 运行此脚本。而 `/bin/sh` 通常是一个链接，在 Ubuntu 下它链接到 dash
+然后，shell 读取 shebang。`#!/bin/sh` 表示以 `/bin/sh` 运行此脚本。而 `/bin/sh` 通常是一个链接，在 Ubuntu 下它链接到 dash
 
 ```sh
 ls -l /bin/sh
 # lrwxrwxrwx root root /bin/sh -> dash
 ```
 
-因此将以 dash 运行此脚本。dash 比 bash 轻量，符合 posix 标准，[两者比较](https://wiki.ubuntu.com/DashAsBinSh)。
+因此实际以 dash 运行此脚本。dash 比 bash 轻量，符合 posix 标准，[两者比较](https://wiki.ubuntu.com/DashAsBinSh)。
 
-注意：[shebang 必须是绝对路径](https://unix.stackexchange.com/questions/77512/why-not-use-pathless-shebangs)。
+shebang 一般使用绝对路径，若没找到则报错。相对路径是相对于 $PWD，没有多大意义。如果不指定路径则报错
+
+```sh
+#!sh
+```
+
+- [Why not use pathless shebangs?](https://unix.stackexchange.com/questions/77512/why-not-use-pathless-shebangs)
+
+Python 脚本的 shebang 通常是
+
+```sh
+#!/usr/bin/env python
+```
+
+意思是使用 `/usr/bin/env` 查找 `python`（在 PATH 中查找），然后以找到的 `python` 运行脚本。
 
 第二种运行方式，以指定的 shell 运行
 

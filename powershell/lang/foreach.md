@@ -60,6 +60,6 @@ Get-ChildItem | foreach {
 
 ## Foreach method
 
-
-
-
+```powershell
+(1..10).ForEach({$_ * 2})
+```

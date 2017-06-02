@@ -112,10 +112,19 @@ ab
 
 ### Replace
 
-`-replace` 操作符
+[`-replace` 操作符](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_comparison_operators#replace-operator)
 
 ```powershell
-Get-Help about_Replace
+help about_Comparison_Operators
+```
+
+- `-replace` 不区分大小写
+- `-ireplace` 明确不区分大小写
+- `-creplace` 区分大小写
+
+```powershell
+"book" -replace "B", "C"
+# Cook
 ```
 
 ### Search

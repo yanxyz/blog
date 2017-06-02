@@ -4,7 +4,7 @@ permalink: /python/ipython/
 
 # IPython
 
-增强型 Python shell，提供高亮等功能。
+增强型 Python shell，提供语法高亮等功能。
 
 <http://ipython.readthedocs.io/en/stable/>
 
@@ -26,5 +26,3 @@ ipython hello.py -- "Ivan Yan"
 # 进入交互模式
 ipython
 ```
-
-这里只关注交互模式

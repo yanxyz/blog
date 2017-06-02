@@ -2,6 +2,8 @@
 permalink: /python/lint/
 ---
 
+# Python lint
+
 ### pycodestyle
 
 之前称为 pep8。检查 code style。

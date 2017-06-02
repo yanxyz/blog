@@ -2,8 +2,6 @@
 
 [Python](http://python.org/)
 
-[文档](https://docs.python.org/)
-
 ## 目录
 
 - [安装](install.md)
@@ -14,7 +12,7 @@
 Tools:
 
 - [IPython](tools/ipython.md)
-- [editor](tools/editor.md)
+- [Editors & IDE](tools/editors.md)
 - [lint](tools/lint.md)
 - [vitualenv](tools/vitualenv.md)
 

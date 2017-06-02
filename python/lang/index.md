@@ -18,6 +18,9 @@
 
 ## 参考
 
+- [文档](https://docs.python.org/)
+
+
 在 Windows 下安装之后 Python 之后，在 Python 安装目录下有帮助文档，比如 `/doc/python360.chm`。
 
 - __The Python Tutorial__， 初步了解 Python

@@ -6,7 +6,7 @@ permalink: /python/script/
 
 Python 脚本的扩展名为 `.py`。
 
-如何运行 Python 脚本？脚本 hello.py
+如何运行 Python 脚本？测试脚本 hello.py
 
 ```python
 #!/usr/bin/env python3
@@ -16,7 +16,7 @@ import sys
 print('hello ' + sys.version)
 ```
 
-第一行是 shebang，意思是使用 `/usr/bin/env` 这个工具搜索 python, 然后由找到的 python 运行这个脚本。
+第一行是 shebang，意思是使用 `/usr/bin/env` 这个工具搜索 `python`, 然后由找到的 `python` 运行这个脚本。
 
 第二行指定脚本的编码，Python 3 默认以 UTF8 编码读取脚本，不建议使用。
 
