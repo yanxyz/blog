@@ -8,8 +8,8 @@ permalink: /python/py/
 
 Python 3.3 为 Windows 引入 Python Launcher
 
-- py.exe, console 程序，启动 python.exe, 关联到 `*.py` 文件。
-- pyw.exe, GUI 程序，启动 pythonw.exe, 关联到 `*.pyw` 文件。
+- py.exe，console 程序，启动 python.exe，关联到 `*.py` 文件。
+- pyw.exe，非 console 程序，启动 pythonw.exe，关联到 `*.pyw` 文件。
 
 查看安装位置
 
@@ -17,9 +17,7 @@ Python 3.3 为 Windows 引入 Python Launcher
 where.exe py.exe
 ```
 
-Python Launcher 随 Python 安装（目前它没有独立安装程序），不过卸载 Python 时不会卸载它，它需要单独卸载。
-
-查看帮助
+Python Launcher 随 Python 安装（目前它没有独立安装程序）。卸载 Python 时不会卸载它，它需要单独卸载。
 
 ```sh
 > py -h
@@ -38,15 +36,15 @@ Launcher arguments:
 
 提示：py.exe 从注册表中搜集所有安装的版本，根据不同的情况确定将要启动的版本。
 
-例 1：
+#### 例 1
 
 ```sh
 py -2.7
 ```
 
-指定了 major.minor，则启动 Python 2.7；若没找到则报错。
+指定了 major.minor，启动 Python 2.7；若没找到则报错。
 
-例 2：
+#### 例 2
 
 ```sh
 py -2.7-32
@@ -54,7 +52,7 @@ py -2.7-32
 
 同例 1，只是要求 32bit 版本。在默认情况下（不指定后缀 `-32`）64bit 版本优先。
 
-例 3：
+#### 例 3
 
 ```sh
 py -3
@@ -65,7 +63,7 @@ py -3
 - 假设 `python3=3`（默认值），从安装的 Python 3.x 中查找 minor 最大的版本，然后启动这个版本；若没有安装 Python 3 则报错。
 - 假设 `python3=3.5`，则启动 Python 3.5；若没有找到则报错。
 
-例 4：
+#### 例 4
 
 ```sh
 py
@@ -88,7 +86,7 @@ import sys
 sys.stdout.write("hello from Python %s\n" % (sys.version,))
 ```
 
-脚本第一行 `#!python` 为 shebang。Unix 支持 shebang 而 Windows 不支持，py.exe 支持 shebang，这样脚本可以在不同的平台下运行。py.ex 只支持下面几种形式
+脚本第一行 `#!python` 为 shebang。Unix 支持 shebang 而 Windows 不支持，py.exe 支持 shebang，这样脚本可以在不同的平台下运行。py.exe 只支持下面几种形式
 
 ```sh
 /usr/bin/env python*
@@ -125,9 +123,9 @@ py.exe 指定了 version，则忽略脚本 shebang，启动哪个版本见上面
 py hello.py
 ```
 
-与上例的区别是，从 shebang 中提取命令，命令指定了 version，之后处理一样。
+从 shebang 中提取命令，之后处理跟上例一样，不过要注意以下情况
 
-- `/usr/bin/env python*` 这种形式特殊一点，上文已讲过。
+- `/usr/bin/env python*` 这种形式见上文。
 - 如果命令是 python（即没有指定 version），如果没有找到想要的版本，优先尝试 python2，这跟启动 Python 不同。
 
 如果脚本没有 shebang，跟 py.exe 不指定参数启动 Python 类似，Python 3.6 优先尝试 Python 3。
@@ -172,7 +170,7 @@ c:\bin\vpython.exe -foo doit.py
 
 ## debug
 
-上面的解说有些复杂，自己动手查看 py 的运行细节：
+上面说得有些复杂，自己动手查看 py.exe 的运行细节：
 
 ```bat
 REM 开始调试，设为任意的值均可
