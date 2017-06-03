@@ -14,6 +14,10 @@ VSCode 支持预览 `markdown`，并排预览或在新标签中预览。
 
 ## 编辑
 
+[Surround snippets for Markdown](https://code.visualstudio.com/updates/v1_12#_surround-snippets-for-markdown)
+
+## 语法高亮
+
 支持高亮代码块，不过不支持相应语言的补全。
 
-[Surround snippets for Markdown](https://code.visualstudio.com/updates/v1_12#_surround-snippets-for-markdown)
+powershell 不支持别名 posh。

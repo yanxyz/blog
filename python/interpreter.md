@@ -45,5 +45,3 @@ python
 - 输入 `quit()`
 
 可以尝试 [IPython](./tools/ipython.md)， 它是增强型 Python shell，提供高亮等功能。
-
-

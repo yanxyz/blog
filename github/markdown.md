@@ -9,8 +9,6 @@ permalink: /github/markdown/
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [Basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
-语法高亮[支持的语言](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
-
 ## emoji
 
 [表情符号](http://www.webpagefx.com/tools/emoji-cheat-sheet/)

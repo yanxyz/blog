@@ -106,8 +106,8 @@ Get-Item $HOME
 
 ```powershell
 Get-ChildItem -Recurse -Depth 2
+Get-ChildItem C:\WINDOWS\System32 -Filter *.txt -Recurse | Select-Object FullName
 ```
-
 
 ## 目录属性
 

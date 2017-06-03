@@ -100,7 +100,7 @@ echo %i%
 
 [Parameter Extensions](http://ss64.com/nt/syntax-args.html)，以第一个参数 `%1` 为例
 
-`%~dp1`
+`%~dp0`
 脚本所在的目录
 
 ### substring

@@ -36,5 +36,39 @@ python3 hello.py
 
 ## Windows
 
-Windows 复杂一些，牵涉到文件关联，py.exe 等，[见这里](py.md)。
+双击脚本运行，看 `.py` 文件关联到哪个程序：
 
+- 关联到 python.exe，则以它运行脚本。
+- 关联到 py.exe，见下文 `py hello.py`。
+
+查看文件关联
+
+```powershell
+assoc .py
+.py=Python.File
+
+ftype Python.File
+Python.File="C:\Windows\py.exe" "%1" %*
+```
+
+### console
+
+在 cmd.exe（命令提示符）中，分为几种情况
+
+```sh
+python hello.py
+```
+
+在 PATH 中查找 `python`，若找到则以它运行脚本；若没有找到则报错。
+
+```sh
+hello.py
+```
+
+跟双击脚本一样。
+
+```sh
+py hello.py
+```
+
+py.exe 是 Python launcher, 它启动相应的 Python 版本并运行脚本, [见这里](py.md)。

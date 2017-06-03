@@ -7,6 +7,8 @@
 - [安装](install.md)
 - [pip](pip.md)
 - [Interpreter](interpreter.md)
+- [脚本](script.md)
+- [Python Launcher for Windows](py.md)
 - [语法](lang/index.md)
 
 Tools:

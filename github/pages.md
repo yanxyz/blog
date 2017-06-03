@@ -24,30 +24,30 @@ github: [metadata]
 theme: jekyll-theme-midnight
 ```
 
-<https://pages.github.com/versions/>
-
 ## themes
 
 <https://pages.github.com/themes/>
 
-
 ## plugins
 
+<https://pages.github.com/versions/>
 
+## 与 GitHub.com 的不同
 
-
-## 与 GitHub 网站的不同
+GitHub.com 不支持 template tag。
 
 ### 自动链接
 
+Github pages 自动链接要放到 `<>` 里
+
+```
 {% raw %}
 <https://pages.github.com/themes/>
 {% endraw %}
+```
 
 ### 语法高亮
 
-语法高亮的引擎为 rougify，支持的语言有限：
+GitHub.com [languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)。
 
-```shell
-bundle exec rougify list
-```
+Github pages 支持的语言比较少，[languages](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers)。
