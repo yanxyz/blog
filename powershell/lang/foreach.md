@@ -23,7 +23,7 @@ foreach ($letter in $letterArray)
 
 ## Foreach cmdlet
 
-这时 foreach 是 ForEach-Object 的别名，这个 cmdlet 还有一个别名 `%`
+这时 foreach 是 ForEach-Object 的别名，这个 cmdlet 有一个别名 `%`
 
 ```powershell
 Get-Alias -Definition ForEach-Object
@@ -59,6 +59,8 @@ Get-ChildItem | foreach {
 ```
 
 ## Foreach method
+
+collection 有 ForEach method
 
 ```powershell
 (1..10).ForEach({$_ * 2})

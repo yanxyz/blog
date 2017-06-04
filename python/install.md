@@ -53,3 +53,5 @@ npm config set python \path\to\python27\python.exe
 python --version
 # Python 3.6.0
 ```
+
+Python 3.3+，`*.py` 文件实际关联到 Python laucher。修复文件关联，先卸载  Python laucher，再重新安装 Python。

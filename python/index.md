@@ -16,7 +16,7 @@ Tools:
 - [IPython](tools/ipython.md)
 - [Editors & IDE](tools/editors.md)
 - [lint](tools/lint.md)
-- [vitualenv](tools/vitualenv.md)
+- [vitualenv](tools/virtualenv.md)
 
 <!--
 Standard Library:

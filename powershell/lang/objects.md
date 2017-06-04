@@ -65,3 +65,9 @@ $p = Get-Process Notepad
 $p.Count
 $p.Kill()
 ```
+
+## cmdlets
+
+```powershell
+Get-Command *object
+```

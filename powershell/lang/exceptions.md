@@ -1,5 +1,5 @@
 ---
-permalink: /powershell/lang/variables/
+permalink: /powershell/lang/exceptions/
 ---
 
 # PowerShell 异常

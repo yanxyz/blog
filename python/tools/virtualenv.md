@@ -2,17 +2,22 @@
 permalink: /python/virtualenv/
 ---
 
-# Virtualenv
+# virtualenv
 
-<https://virtualenv.pypa.io/en/stable/userguide/>
+virtualenv 用于创建独立的 Python 环境。
 
-安装
+## 安装
 
 ```
 pip install virtualenv
 virtualenv --version
 virtualenv --help
 ```
+
+## 用法
+
+[User Guide](https://virtualenv.pypa.io/en/stable/userguide/)
+
 
 创建
 

@@ -27,8 +27,6 @@ Get-Help about_Command_Precedence
 help about_Core_Commands
 ```
 
-
-
 ## 语法
 
 ```powershell

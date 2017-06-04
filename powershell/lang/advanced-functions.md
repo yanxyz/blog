@@ -8,7 +8,6 @@ permalink: /powershell/lang/advanced-functions/
 help about_Functions_Advanced
 help about_Functions_CmdletBindingAttribute
 help about_Functions_OutputTypeAttribute
-help about_Functions_Advanced_Parameter
 help about_Functions_Advanced_Methods
 ```
 
@@ -47,3 +46,6 @@ stage | cmdlet |  advanced function
 create pipeline | BeginProcessing() method | Begin block
 emit a object | ProcessRecord() method  | Process block
 finish | EndProcessing() method | End block
+
+
+
