@@ -1,3 +1,7 @@
+---
+permalink: /npm/
+---
+
 # npm
 
 npm 是 JavaScript 模块管理工具。

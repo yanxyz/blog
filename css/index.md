@@ -8,7 +8,6 @@ CSS 为 structured document(html, xml 等) 指定样式。
 
 - [选择器](selectors.md)
 
-
 属性
 
 - [边框](borders.md)
@@ -16,8 +15,8 @@ CSS 为 structured document(html, xml 等) 指定样式。
 - [浮动](float.md)
 - [变换](transforms.md)
 - [过渡](transitions.md)
+- [动画](animations.md)
 - [flexbox](flexbox.md)
-- [animations](animations.md)
 
 工具
 
