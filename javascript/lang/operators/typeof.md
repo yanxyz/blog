@@ -1,5 +1,5 @@
 ---
-permalink: /javascript/lang/typeof/
+permalink: /javascript/lang/operators/typeof/
 ---
 
 # JavaScript typeof 操作符

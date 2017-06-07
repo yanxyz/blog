@@ -13,7 +13,7 @@
 <!--- [变量](variables.md)-->
 - [表达式](expressions.md)
 - [语句](statements.md)
-<!-- - [函数](functions.md) -->
+- [函数](functions.md)
 <!-- - [异常](exceptions.md) -->
 <!-- - [Classes](classes.md) -->
 <!-- - [模块](modules.md) -->

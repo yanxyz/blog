@@ -15,17 +15,15 @@ permalink: /css/selectors/
     .class     /* class selector */
     [name]     /* attribute selector */
     a          /* type selector，元素标签 */
-    *         /* universal selector，表示任意的 type */
+    *          /* universal selector，表示任意的 type */
     :checked   /* pseudo-class ，通常表示状态 */
     ```
 
 - compound selector
 
     ```css
-    a img    /* 选中 a 的后代元素 img */
-    a > img  /* 选中 a 的子元素 img */
-    a + img  /* 选中 a 之后兄弟元素 img */
-    a ~ img  /* 选中 a 之后紧邻的兄弟元素 img */
+    a:hover
+    input[name]
     ```
 
 - complex selector，由 compound selectors 使用连接符组成。连接符有 space(或 >>), >, +, ~。元素匹配后面的 selector, 前面的 selector 是 context。
@@ -102,7 +100,7 @@ li:nth-last-child(-n + 3)  /* 后三个 li */
 
 除了上面的计算，还要考虑优先级。优先级由低到高
 
-1. stylesheets 分为
+1. stylesheets，分为
     - external stylesheets 即 `<link>` 引入的 css file
     - internal stylesheet 即 `<style>`
 1. inline styles，即 style attribute

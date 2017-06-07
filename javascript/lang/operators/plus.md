@@ -1,5 +1,5 @@
 ---
-permalink: /javascript/lang/plus/
+permalink: /javascript/lang/operators/plus/
 ---
 
 # JavaScript plus

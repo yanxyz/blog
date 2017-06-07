@@ -4,9 +4,7 @@ permalink: /python/lang/types/
 
 # Python Types
 
-Python 有许多内置类型。
-
-文档 **The Python Standard Library > Built-in Types**
+Python 有许多内置类型。文档 **The Python Standard Library > Built-in Types**。
 
 ## 假值
 
@@ -27,13 +25,13 @@ None 是 NoneType 的唯一的值
 ```py
 if (x is not None)
 ```
-
+<!--
 ## Types 转换
 
 
 ## Type Hints
 
 <https://github.com/python/mypy>
-
+ -->
 
 

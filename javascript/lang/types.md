@@ -185,17 +185,23 @@ PreferredType 是 type hint。hint 默认值是 `"default"`。内置对象当中
 
 JavaScript 所有的 object 都继承自 Object.prototype，它有两个方法 `toString()`，`valueOf()`，所以所有的 object 都可以使用这两个方法。不过 Array, Function, Date, RegExp 等定义了自己的 `toString()` 方法；Date 定义了自己的 `valueOf()` 方法。
 
-转换示例：
-
 ```js
 Number([]) // 0
-// a = []; ToPrimitive(a, "number") => '' (a.valueOf() => a; a.toString() => '')
-// ToNumber('') => 0
+```
 
-Number([1]) // 1
-Number([1, 2]) // NaN
+怎么理解？设 `a = []`
 
-Number(new Date())
+1. ToPrimitive(a, "number") 返回 `''`
+    1. a.valueOf() 返回 a
+    1. a.toString() 返回 ''
+1. ToNumber('') 返回 0
+
+现在想一想下面表达式的值
+
+```js
+Number([1])          // ?
+Number([1, 2])       // ?
+Number(new Date(1))  // ?
 ```
 
 ### ToString

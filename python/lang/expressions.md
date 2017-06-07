@@ -4,10 +4,7 @@ permalink: /python/lang/expressions/
 
 # Python 表达式
 
-Python 操作符优先级，这张表可以了解 Python 有哪些操作符
-<https://docs.python.org/reference/expressions.html#operator-precedence>
-
-**The Python Language Reference > Expressions > Operator precedence**
+[**The Python Language Reference > Expressions > Operator precedence**](https://docs.python.org/reference/expressions.html#operator-precedence)
 
 ## 算术
 
@@ -48,10 +45,17 @@ x = 2
 1 < x <= 3
 ```
 
-## FAQ
+## Conditional operator
 
-没有三元运算符 `?:`，变通方法
+没有 conditional operator `?:`，变通方法
 
 ```py
-x = 1 if True
+a if condition else b
+```
+
+先计算 condition，根据的它的结果返回 a 或 b。
+
+```py
+x = 1 if True else 0
+print(x)
 ```

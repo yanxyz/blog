@@ -1,6 +1,6 @@
-# JavaScript 表达式
+# JavaScript 操作符
 
-- [操作符优先级](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+[操作符优先级](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
 ## 目录
 
@@ -10,7 +10,6 @@
 - [typeof](typeof.md)
 - [spread 和 rest 操作符](spread-rest.md)
 - [delete](delete.md)
-
 
 ## 逗号操作符
 
