@@ -19,7 +19,7 @@ permalink: /css/selectors/
     :checked   /* pseudo-class ，通常表示状态 */
     ```
 
-- compound selector
+- compound selector，由 simple selectors 组成，不使用连接符。
 
     ```css
     a:hover
@@ -49,9 +49,10 @@ permalink: /css/selectors/
 
 `:nth-child(An+B [of S]?)`
 
-- A, n, B 都是 integer，n 从 1 开始。S 是 selector list, 默认是 `*`。
-- 参数可以是 odd, even。
-- 元素是它的父元素的第几个子元素，而不是元素的第几个子元素。
+- 匹配元素是它的父元素的第几个子元素，而不是匹配元素的第几个子元素。
+- 子元素从 1 开始数起，也不管它是否隐藏。
+- n, A, B 都是整数，n 从 0 开始。参数可以是 odd(即 2n+1)，even(即 2n)。
+- S 是 selector list, 默认是 `*`。目前只有 Safari 实现。
 
 表格斑马条纹
 
@@ -66,6 +67,7 @@ tr:nth-child(even) {
 ```
 
 ```css
+li:nth-child(3)            /* 第三个 li */
 li:nth-child(-n + 3)       /* 头三个 li */
 li:nth-last-child(-n + 3)  /* 后三个 li */
 ```

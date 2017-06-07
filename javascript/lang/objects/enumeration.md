@@ -4,26 +4,31 @@ permalink: /javascript/lang/objects/enumeration/
 
 # 遍历对象属性
 
-对象属性：
+对象属性有这种情形
 
 - type: String, Symbol
-- ownership: Own, Prototype chain
+- ownership: Own, Inherited
 - enumerability: Enumerable, Nonenumerable
 
-method | Symbol | Nonenumerable | prototype
+method | Symbol | Nonenumerable | Inherited
 ------ | ------ | ------------- | ----------
-`Object.keys()`     | N | N | N
-`Object.values()`   | N | N | N
-`Object.entries()`  | N | N | N
-`.hasOwnProperty()` | Y | Y | N
-`.propertyIsEnumerable`               | Y | Y | N
-`Object.getOwnPropertyNames()`        | N | Y | N
-`Object.getOwnPropertyDescriptors()`  | N | Y | N
-`Reflect.ownKeys()` | Y | Y | N
-`for...in`          | N | Y | Y
+`Object.keys()` <br> `Object.values()` <br> `Object.entries()`  | - | - | -
+`.hasOwnProperty()`       | Y | Y | -
+`.propertyIsEnumerable()` | Y | Y | -
+`Object.getOwnPropertyNames()`       | - | Y | -
+`Object.getOwnPropertyDescriptors()` | Y | Y | -
+`Reflect.ownKeys()` | Y | Y | -
+`for...in`          | - | Y | Y
 `in` operator       | Y | Y | Y
+
+名字中包含 `Own` 的方法只处理自身属性。
+
+`.propertyIsEnumerable()` 判断属性是否可以枚举
+
+- 对于自身 nonenumerable 属性自然返回 false。
+- 对于原型链上的属性，不考虑，返回 false。
 
 ## 参考
 
-- <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties>
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
