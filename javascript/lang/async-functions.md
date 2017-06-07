@@ -57,7 +57,6 @@ const t = async () => {}
 - 操作数为 promise, 则等待它 resolve；
 - 操作数为其它类型，则隐式传入 `Promise.resolve()`
 
-
 ## 要点
 
 async 函数既然是异步操作，想一想下面的输出

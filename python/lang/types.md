@@ -6,16 +6,14 @@ permalink: /python/lang/types/
 
 Python 有许多内置类型。
 
+文档 **The Python Standard Library > Built-in Types**
+
 ## 假值
 
-type      | false
-----      | ----
-NoneType  | None
-bool      | False
-numeric   | 0
-sequence  | 空的，即 `len(x) == 0`，比如 `''`, `()`, `[]`
-mapping   | 空的，即 `len(x) == 0`，比如 `{}`
-instances | `__bool__()` 返回 False 或 `__len__()` 返回 0
+```py
+len([]) == 0 # empty sequence
+len({}) == 0 # empty mapping
+```
 
 ```py
 x = 1

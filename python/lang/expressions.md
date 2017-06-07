@@ -7,29 +7,30 @@ permalink: /python/lang/expressions/
 Python 操作符优先级，这张表可以了解 Python 有哪些操作符
 <https://docs.python.org/reference/expressions.html#operator-precedence>
 
+**The Python Language Reference > Expressions > Operator precedence**
+
 ## 算术
 
-Python 不会自动转换类型
+不会自动转换类型
 
 ```py
 '2' + 2  # TypeError
 ```
 
-Python 没有 `++`, `--` 运算符
+没有 `++`, `--` 运算符，变通方法
 
 ```py
 i = 0
 i += 1
 ```
 
-除法有两种，`/` 结果为 float，`//`（floor division）结果为 integer：
+除法有两种，`/` 结果为 float，`//`（floor division）结果为 integer; 除以 0 抛出 ZeroDivisionError。
 
 ```py
 10 / 2   # 5.0
 10 // 2  # 5
+10 / 0   # ZeroDivisionError
 ```
-
-不可以除以 0，否则抛出 ZeroDivisionError。
 
 幂运算
 
@@ -45,4 +46,12 @@ i += 1
 ```py
 x = 2
 1 < x <= 3
+```
+
+## FAQ
+
+没有三元运算符 `?:`，变通方法
+
+```py
+x = 1 if True
 ```

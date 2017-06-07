@@ -29,3 +29,9 @@ print(x)
 print(type(x))
 ```
 
+## Types
+
+built-in mumberic types: int, float, complex
+
+标准库提供的数字类型：Decimal，Fraction。
+

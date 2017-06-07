@@ -1,5 +1,5 @@
 ---
-permalink: /nodejs/npm/config/
+permalink: /npm/cli/config/
 ---
 
 # npm config
@@ -8,3 +8,5 @@ permalink: /nodejs/npm/config/
 npm config -h
 npm help config
 ```
+
+

@@ -128,7 +128,7 @@ null.toString() // TypeError
 | Number        | 返回 argument（不进行转换）。
 | String        | 转换规则见下。
 | Symbol        | 抛出一个 TypeError 异常。
-| Object        | 先让 primValue 为 [`ToPrimitive(argument, hint Number)`](#toprimitive)，再 `ToNumber(primValue)`。
+| Object        | 1. primValue = [`ToPrimitive(argument, hint Number)`](#toprimitive)，<br> 2. `ToNumber(primValue)`。
 
 `Number()` 将 String 转为 Number，先删掉字符串头尾的空白，然后
 
@@ -235,35 +235,6 @@ Number 类型转为 String 类型：
 
 `Object()` 跟 `ToObject` 有一点不一样，`Object()` 参数为 undefined 或 null 时，返回一个空对象。
 
-## 操作符
-
-一元操作符 `+`， 将操作数转为 Number 类型。
-
-```js
-+true // 1
-+new Date(1) // 1
-```
-
-二元操作符 `+`，有两种意思：拼接字符串或者数字加法。
-
-- 当两个操作数都是数字或字符串时，结果显而易见。
-- 当两个操作数的类型不一样时会转换类型，先将两个操作数 ToPrimitive（没有提供 hint）转为原始值，
-  - 如果其中一个原始值是字符串，则将另一个原始值转为字符串，然后拼接两个字符串；
-  - 如果两个原始值都不是字符串，则将两者转为数字，然后相加。
-
-想一想下面这些表达式的值是多少？
-
-```js
-true + false // ?
-null + null  // ?
-null + undefined  // ?
-'1' + 1 // ?
-
-var d = new Date(1)
-d + d // ?
-d + 1 // ?
-d - 1 // ?
-```
 
 ## 判断类型
 

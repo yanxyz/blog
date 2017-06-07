@@ -1,38 +1,40 @@
 ---
-permalink: /nodejs/npm/install/
+permalink: /npm/install/
 ---
 
-# npm install
+# 安装 npm
 
-```sh
-npm install -h
-npm help install
-```
+npm 随 Node.js 安装。如果不想使用 Node.js 自带的 npm，见下文。
 
-这跟 npm 不一样，npm 将从当前目录向上搜索 `package.json`，若找到则将模块安装到 `package.json` 所在目录下的 `node_modules` 目录；若没有找到则在当前
+## 升级
 
+[Windows 升级 npm](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows)。
 
-## install native modules
-
-native modules 如 sqlite3、node-sass 等，它们可能已经提供了编译好的 binary，不过被墙无法正常下载。
-
-### 本地编译
-
-需要准备：
-
-- [编译环境](https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#prerequisites)
-- Node.js 头文件，[下载办法](https://github.com/mafintosh/node-gyp-install)
-
-```sh
-set "PYTHON_MIRROR=http://npm.taobao.org/mirrors/python"
-npm install --global --production windows-build-tools
-```
-
-### 使用国内镜像
-
-<https://npm.taobao.org/mirrors> 为常用的模块提供镜像。
+Ubuntu 升级 npm:
 
 ```shell
-# 将 sqlite3 添加到 npm 配置中
-npm config set SQLITE3_BINARY_SITE=http://npm.taobao.org/mirrors/sqlite3
+# 最新的稳定版本
+sudo apt-get install -g npm
+# 最新的 LTS 版本
+sudo apt-get install -g npm@lts
 ```
+
+## 配置
+
+[使用淘宝镜像](https://npm.taobao.org/)
+
+### 改变 npm 的目录
+
+在 Linux 下安装全局包时默认需要权限，一个解决办法是 [改变 npm 的默认目录](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)。
+
+Windows 下 npm 的默认目录在系统盘上，将它调整到非系统盘上比较好。在命令行中运行 `npm -h`，在末尾可以看到配置文件位置。我的配置：
+
+```ini
+cache = F:\Nodejs\npm-cache
+prefix = F:\Nodejs\npm-g
+python = F:\Python\Python27\python.exe
+```
+
+- cache 模块下载保存位置。
+- prefix 模块全局安装的位置，需要将它添加到环境变量 PATH 中。
+- python 安装原生模块时的工具。

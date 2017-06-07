@@ -5,8 +5,13 @@ permalink: /nodejs/install/
 # 安装 node.js
 
 ## Windows
+
+下载安装程序
+
+- [官网](https://nodejs.org/)
+- [淘宝镜像](https://npm.taobao.org/mirrors/node/)
 ​
-从 [官网](https://nodejs.org/)下载安装程序，双击运行安装。安装完成之后，在命令行中运行下面命令，看看是否正常:
+安装完成之后，在命令行中运行下面命令，看看是否正常:
 ​
 ```bat
 node -v
@@ -28,9 +33,9 @@ node -v
 ​
 Debian 的 node.js 版本比较旧，可以使用 [NodeSource 的源](https://github.com/nodesource/distributions#readme)。
 ​
-多版本可以用 [nvm](https://github.com/creationix/nvm#readme)。
-​
 ### nvm
+
+多版本可以用 [nvm](https://github.com/creationix/nvm#readme)。
 ​
 我的 `~/.bashrc`：
 ​

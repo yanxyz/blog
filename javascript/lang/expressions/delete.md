@@ -1,5 +1,5 @@
 ---
-permalink: /javascript/lang/operators/delete/
+permalink: /javascript/lang/delete/
 ---
 
 # JavaScript delete 操作符

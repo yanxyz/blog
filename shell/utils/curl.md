@@ -24,6 +24,13 @@ curl --help | grep -- -s, # 搜索选项
 ```sh
 curl -o filename url
 curl -sSLO url
+
+# 一次下载多个文件
+curl --remote-name-all \
+    url1 \
+    url2
+
+curl -x proxyserver url
 ```
 
 测试 web API

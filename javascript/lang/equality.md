@@ -13,11 +13,42 @@ permalink: /javascript/lang/equality/
 
 ## loose equality
 
-`==` 当类型不一样时先转换类型。
+[Abstract Equality Comparison](https://tc39.github.io/ecma262/#sec-abstract-relational-comparison)
+
+`x == y` 如果两者类型一样，结果同 `===`；不然先转换类型
+
+- null == undefined 返回 true
+- 其中一个 a 为 Boolean，则 ToNumber(a)
+- 一个 a 为 Number, 另一个 b 为 String, 则 ToNumber(b)
+- 一个 a 为 Number 或 String 或 Symbol，另一个 b 为 Object，则 ToPrimitive(b)
+- 返回 false
+
+注：[ToNumber, ToPrimitive](types.md)
+
+从上面的步骤可以得出
+
+- null，undefined 不等于这两个之外的值
+- NaN 不等于其它值，包括它自己
+- 跟 `+` 相反，String 和 Number 比较，String 转为 Number
+
+下面表达式的结果都为 true
+
+```js
+null == undefined
+null != false
+null != 0
+NaN != false
+
+true == 1
+true == '1'
+
+({} != '1')
+([1] == '1')
+```
 
 ## strict equality
 
-`===` 不会转换类型，如果类型不一致结果为 `false`。
+`===` 如果类型不一致结果为 `false`。
 
 - NaN 不等于 NaN
 - +0 等于 -0

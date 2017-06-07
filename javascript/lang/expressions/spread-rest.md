@@ -1,5 +1,5 @@
 ---
-permalink: /javascript/lang/operators/spread/
+permalink: /javascript/lang/spread/
 ---
 
 # JavaScript spread 和 rest 操作符

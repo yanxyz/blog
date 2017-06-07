@@ -20,3 +20,13 @@ permalink: /python/lang/basic/
 if x < 0:
     x = 0
 ```
+
+## 变量
+
+变量没有声明语句，赋值后可以使用
+
+```python
+x = 0
+print(x)
+print(y)  # NameError
+```

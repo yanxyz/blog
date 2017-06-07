@@ -1,5 +1,5 @@
 ---
-permalink: /nodejs/yarn/
+permalink: /npm/yarn/
 ---
 
 # yarn

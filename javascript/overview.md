@@ -8,8 +8,10 @@ JavaScript 最初由 Netscape 浏览器在 1996 发布，最开始称作 LiveScr
 
 2015 年发布了 EcmaScript 6，或称之为 EcmaScript 2015，EcmaScript 自此每年更新一次。
 
-- [Standard ECMA-262: ECMAScript Language Specification ](http://www.ecma-international.org/publications/standards/Ecma-262.htm) 查看当前规范。
-- [Ecma TC39 ECMAScript](https://github.com/tc39/ecma262) 当前进度。
+Ecma TC39 ECMAScript
+
+- <https://github.com/tc39/ecma262/>
+- <https://tc39.github.io/ecma262/>
 
 ## 兼容性
 
@@ -33,7 +35,6 @@ ES6:
 ES5:
 
 - [Axel Rauschmayer：Speaking Javascript](http://speakingjs.com/es5/index.html) ES 5 语法。
-
 
 ## 工具
 

@@ -1,5 +1,5 @@
 ---
-permalink: /nodejs/npm/package.json/
+permalink: /npm/package.json/
 ---
 
 # npm package.json
@@ -8,7 +8,7 @@ permalink: /nodejs/npm/package.json/
 npm help package.json
 ```
 
-name 和 version 是必须的。
+package.json 是 node.js package meta file。必须指定 name 和 version。
 
 ### name
 
@@ -19,6 +19,10 @@ name
 
 ### scripts
 
+
+将 npm 当作构建工具
+
+-
 
 
 
