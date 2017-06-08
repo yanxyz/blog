@@ -38,8 +38,6 @@ Array.isArray = Array.isArray || function (obj) {
 }
 ```
 
-[内置对象](/uploads/)
-
 ## 类型转换
 
 JavaScript 是弱类型语言，不用声明变量的类型；也是动态语言，在运行时根据需要转换类型。例如：

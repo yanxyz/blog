@@ -28,22 +28,22 @@ license 的值有下面几种
 
 第一种：为 [SPDX license id](https://spdx.org/licenses/)
 
-```json
+```jsson
 "license": "MIT"
 "license": "(MIT OR Apache-2.0)"
 ```
 
-package.json license 的值如果不是有效的 SPDX ID，会报错：
+如果不是有效的 SPDX ID，会报错：
 
 > Sorry, license should be a valid SPDX license expression
 
 第二种：指定一个 license 文件，该文件应该在 package 根目录下
 
 ```json
-{ "license" : "SEE LICENSE IN <filename>" }
+"license" : "SEE LICENSE IN <filename>"
 ```
 
-第二种：为私有，此时最好同时设置 `private: true`
+第三种：为私有，此时最好同时设置 `private: true`
 
 ```json
 { "license": "UNLICENSED" }

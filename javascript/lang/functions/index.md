@@ -45,6 +45,19 @@ typeof window.add // "function"
 函数如果没有 return 语句，则返回默认值：construcor 为 this, 其它函数为 undefined。
 
 
+### return
+
+return 陷阱
+
+```js
+function f() {
+  return
+    'a'
+}
+f() // undefined
+```
+
+返回值必须跟 return 同行。
 
 ## 函数表达式
 
