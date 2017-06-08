@@ -15,9 +15,7 @@ Github 免费账户只能创建公开项目，不过项目数量、项目合作�
 
 ## 资源
 
-help
-
-- <https://help.github.com/>
+- [help](https://help.github.com/)
 
 icons
 

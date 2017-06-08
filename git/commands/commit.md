@@ -16,28 +16,6 @@ git commit -am 'Fix a type'
 
 `-a` 自动添加修改过的文件，不包含新建文件，新建文件要用 add 添加。
 
-#### --amend
-
-`--amend` 替换上次提交。不要修改公共提交。
-
-修改上次提交的消息（ 前提是 index 没有快照）
-
-```sh
-git commit --amend
-```
-
-补交文件
-
-```sh
-git add .
-git commit --amend --no-edit
-```
-
-`--no-edit` 意思是不修改提交信息。
-
-
-###
-
 `git add -A`
 添加当前目录下 changes
 

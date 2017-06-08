@@ -18,16 +18,6 @@ git branch -h
 git help branch
 ```
 
-## 目录
-
-- [clone](clone.md)
-- [checkout](checkout.md)
-- [branch](branch.md)
-- [reset](reset.md)
-- [diff](diff.md)
-- [merge](merge.md)
-
-
 ## 资料
 
 小抄 cheat sheet

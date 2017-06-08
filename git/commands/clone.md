@@ -6,7 +6,6 @@ permalink: /git/clone/
 
 git URLs 见 `git help fetch`
 
-
 ### 如何只 clone 一个分支？
 
 ```shell

@@ -4,6 +4,16 @@ permalink: /git/merge/
 
 # git merge
 
+Git 有两种合并 branch 的方法：merge, rebase。
+
+merge 是 three-way 合并。
+
+![](https://git-scm.com/book/en/v2/images/basic-rebase-1.png)
+
+合并之后
+
+![](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
+
 
 ## git mergetool
 

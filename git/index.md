@@ -1,10 +1,23 @@
 # Git
 
+## 目录
+
 - [安装](install.md)
-- [配置](commands/config.md)
-- [命令](commands/index.md)
 - [gitignore](gitignore.md)
 - [gitattributes](gitattributes.md)
+
+命令
+
+- [命令](commands/index.md)
+- [config](commands/config.md)
+- [clone](commands/clone.md)
+- [checkout](commands/checkout.md)
+- [branch](commands/branch.md)
+- [commit](commands/commit.md)
+- [tag](commands/tag.md)
+- [reset](commands/reset.md)
+- [diff](commands/diff.md)
+- [merge](commands/merge.md)
 
 ## 参考资料
 

@@ -24,22 +24,22 @@ git config --global user.email "yan@gmail.com"
 
 ## SSH
 
-[git URLs]()
 
 [SSH](../../github/git.md)
 
 ## Git Aliases
 
-设置别名
+设置别名。这里别名是在 Git 下使用，`git <alias>`，不是 shell 别名。
 
 ```sh
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.ci commit
-$ git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+# 列出全部别名，`!` 使用外部命令
+git config --global alias.la "!git config -l | grep alias | cut -c 7-"
 ```
 
-## 资料
-
-- [Git Aliases](http://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+- [Pro Git: Git Aliases](http://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
 - [示例](<https://github.com/durdn/cfg/blob/master/.gitconfig)

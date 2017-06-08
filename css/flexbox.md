@@ -57,13 +57,15 @@ Value: <flex-direction> || <flex-wrap>
 Initial: row nowrap
 ```
 
-这是一个速记属性。
+这是一个 shorthand 属性。
 
 ### justify-content
 
 ```
 Value: flex-start | flex-end | center | space-between | space-around
 ```
+
+flex items 在主轴的排列。
 
 ![](https://drafts.csswg.org/css-flexbox/images/flex-pack.svg)
 
@@ -74,7 +76,9 @@ Value: flex-start | flex-end | center | baseline | stretch
 Initial: stretch
 ```
 
-flex item 可以用 [align-items](#align-items) 覆盖这个属性。
+flex items 在交叉轴的排列。
+
+flex items 可以用 [align-items](#align-items) 覆盖这个属性。
 
 ![](https://drafts.csswg.org/css-flexbox/images/flex-align.svg)
 
@@ -86,17 +90,17 @@ Value: flex-start | flex-end | center | space-between | space-around | stretch
 Initial: stretch
 ```
 
-只有当 flex container 多行时才有效果。
+flex lines 的排列。只有当 flex container 多行时（flex-wrap: !nowrap）才有效果。
 
 ![](https://drafts.csswg.org/css-flexbox/images/align-content-example.svg)
 
 
 ## flex items
 
-flex items
+flex items 下面属性
 
 - float 忽略
-- position: absolute | fixed，脱离常规流，不参与 flexbox 布局，不过可以用 order。
+- `position: absolute | fixed`，表现好像只有它一个 flex item。
 - margin: auto，在 justify-content, align-self 之前取走空余空间。
 
 ### flex
@@ -106,7 +110,7 @@ Value: none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]
 Initial: 0 1 auto
 ```
 
-这是一个速记属性。
+这是一个 shorthand 属性。
 
 property    | omitted | initial
 ----------  | :-----: | :-----:
