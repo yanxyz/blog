@@ -12,8 +12,7 @@ GitHub Pages 建立在 [Jekyll](../ruby/jekyll.md) 上。在本地建立 Jekyll 
 
 事先安装 Ruby, Bundler（[安装方法](/ruby/)）。
 
-按照这个页面的说明进行
-<https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/>
+[教程](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 >  Error: No repo name found. Specify using PAGES_REPO_NWO environment variables, 'repository' in your configuration, or set up an 'origin' git remote pointing to your github.com repository.
 

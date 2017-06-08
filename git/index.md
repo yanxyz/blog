@@ -14,10 +14,12 @@
 - [checkout](commands/checkout.md)
 - [branch](commands/branch.md)
 - [commit](commands/commit.md)
+- [log](commands/log.md)
 - [tag](commands/tag.md)
-- [reset](commands/reset.md)
 - [diff](commands/diff.md)
 - [merge](commands/merge.md)
+- [rebase](commands/rebase.md)
+- [reset](commands/reset.md)
 
 ## 参考资料
 

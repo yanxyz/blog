@@ -16,41 +16,35 @@ name
 
 - 不能有大写字母
 
-
 ### scripts
 
 
 将 npm 当作构建工具
 
--
-
-
 
 ### license
 
-或者为 [SPDX license id](https://spdx.org/licenses/)
+license 的值有下面几种
+
+第一种：为 [SPDX license id](https://spdx.org/licenses/)
 
 ```json
-{ "license": "MIT" }
-
-// 多种许可
-{ "license": "(MIT OR Apache-2.0)" }
+"license": "MIT"
+"license": "(MIT OR Apache-2.0)"
 ```
 
-或者指定一个 license 文件，该文件应该在 package 根目录下
+package.json license 的值如果不是有效的 SPDX ID，会报错：
+
+> Sorry, license should be a valid SPDX license expression
+
+第二种：指定一个 license 文件，该文件应该在 package 根目录下
 
 ```json
 { "license" : "SEE LICENSE IN <filename>" }
 ```
 
-或者为私有，此时最好同时设置 `private: true`
+第二种：为私有，此时最好同时设置 `private: true`
 
 ```json
 { "license": "UNLICENSED" }
-```
-
-如果 license 错误，在安装时会给出警告。
-
-```sh
-npm config
 ```

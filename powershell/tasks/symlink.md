@@ -26,7 +26,7 @@ New-Item -ItemType SymbolicLink -Path .\a -Value .\d
 
 注意：PowerShell 6 alpha 无法创建 SymbolicLink 目录链接。
 
-Windows 命令行下由 [mklink](../../windows/mklink.md) 创建链接，跟 PowerShell 有一些不同。
+Windows 命令行下由 [mklink](../../cmd/utils/mklink.md) 创建链接，跟 PowerShell 有一些不同。
 
 ## 查看链接的属性
 

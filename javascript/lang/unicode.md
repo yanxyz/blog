@@ -21,7 +21,7 @@ var \u{61} = "abc"
 console.log(\u{61})
 ```
 
-<https://github.com/nzakas/understandinges6/blob/master/manuscript/A-Other-Changes.md#unicode-identifiers>
+下面以 🐎 horse emoji `\u{1f40e}` 为例说明。
 
 ## String
 
@@ -35,9 +35,7 @@ var horse = '🐎'
 horse.length // 2
 ```
 
-除了 length, `indexOf()`, `charAt()`, `charCodeAt()` 等受到影响。
-
-`codePointAt()`, `for...of` 等支持 unicode。
+不只是 length, `indexOf()`, `charAt()`, `charCodeAt()` 等传统方法都受到影响。只有新方法 `codePointAt()`, `for...of` 等支持 unicode。
 
 ```js
 const str = 'a🐎'
@@ -58,8 +56,6 @@ unicode flag `u`
 ```
 
 二，regexp 可以使用 `\u{}`。如果不使用 unicode flag，`\u{}` 将视为 `\u` + `{}`，而 `\u` 是非必要转义，结果为 `u`。
-
-以 🐎 horse emoji `\u{1f40e}` 来测试
 
 ```js
 /\u{1f40e}/.test('🐎') // false

@@ -37,6 +37,7 @@ permalink: /javascript/lang/
 
 Topics
 
+- [scope](scope.md)
 - [this](this.md)
 - [相等判断](equality.md)
 - [闭包](closures.md)

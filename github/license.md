@@ -19,12 +19,7 @@ GNU GENERAL PUBLIC LICENSE  filename:license
 公开项目，不管使用什么许可证，Github 的用户都可以查看和 fork。
 这意味着将项目转为私有后，旧内容如果有人 fork，那么旧内容仍然是公开的。
 
-## package.json
 
-package.json license 的值如果不是有效的 SPDX ID，会报错：
-"Sorry, license should be a valid SPDX license expression"
-
-<https://docs.npmjs.com/files/package.json#license>
 
 ## Creative Commons
 
