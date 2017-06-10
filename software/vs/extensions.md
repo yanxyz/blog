@@ -25,7 +25,7 @@ permalink: /software/vs/extensions/
 
 ## Productivity Power Tools
 
-工具套件。`Quick Launch > @opt power tools` 打开配置选项。
+工具套件。**Quick Launch > @opt power tools** 打开配置选项。
 
 列宽边界线由 Editor Guidelines 实现。
 

@@ -48,17 +48,23 @@ View Bar 跟操作系统任务栏类似，可以拖拽图标。通过右键菜�
 
 encoding 不能自动识别 GBK。
 
-## 编辑功能
+## 编辑
 
-打开 Welcome 页面，点击菜单 `Help > Welcome`。
+点击菜单 **Help > Welcome** 打开 Welcome 页面，以交互的方式学习编辑功能。
 
-![](https://code.visualstudio.com/images/1_9_welcome-page.png)
+### 多点编辑
 
-**Interactive Playground**，以交互的方式学习编辑功能。
+`Alt+Click` 添加 multiple cursors，Sublime Text 默认为 `Ctrl+Click`，可以修改
 
-### multi-cursor
+```js
+"editor.multiCursorModifier": "ctrlCmd",
+```
 
-`ctrl+d` 或 `ctrl+click`。
+不过 **Go To Definition** 和 **Open Link** 将改为 `Alt+Click`。
+
+多选快捷键
+
+- `ctrl+d`
 
 [区分大小写](https://code.visualstudio.com/updates/v1_9#_match-case-and-whole-words-in-multicursor-actions)
 
@@ -72,9 +78,13 @@ encoding 不能自动识别 GBK。
 
 Snippets 可以指定快捷键。
 
+可以使用多点编辑在多个地方插入 Snippets。
+
+[Snippets 语法](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax)
+
 ## IntelliSense
 
-<https://code.visualstudio.com/docs/editor/intellisense>
+[docs](https://code.visualstudio.com/docs/editor/intellisense)
 
 候选列表会合适的自动打开，在JavaScript `.` 是触发字符。方向键选择列表项，`tab` 或 `enter` 输入选中项，`esc` 取消输入。
 
@@ -82,7 +92,11 @@ Snippets 可以指定快捷键。
 
 在注释和字符串中没有 IntelliSense，可以 `Ctrl+Space`，也可以修改配置 `editor.quickSuggestions`。
 
-Snippets 默认在列表的底部，可以修改配置 `"editor.snippetSuggestions": "top"`
+Snippets 默认在列表的底部，可以修改配置 `"editor.snippetSuggestions": "top"`。
+
+候选列表打开后，`Ctrl+Space` 查看选中项的文档
+
+![](https://code.visualstudio.com/images/1_13_suggest.gif)
 
 ## Panel
 
@@ -97,6 +111,10 @@ Snippets 默认在列表的底部，可以修改配置 `"editor.snippetSuggestio
 ## 书签
 
 目前不支持书签，可以安装相关扩展 bookmark
+
+## Multi-root workspaces
+
+multi-root (multiple project folder) workspaces
 
 ## macOS
 

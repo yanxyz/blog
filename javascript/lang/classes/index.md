@@ -66,10 +66,7 @@ constructor 可以省略，默认为 `constructor() {}`
 
 method 不能用作 constructor function
 
-## static
+## 接下来
 
-[static 关键字](./static.md)
-
-## 继承
-
-[extends 关键字](./extends.md)
+- [static 关键字](./static.md)
+- [extends 关键字](./extends.md)

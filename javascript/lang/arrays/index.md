@@ -53,28 +53,8 @@ a['a'] = 'a'
 console.log(a)
 ```
 
-## 遍历数组
+## 继续
 
-- for loop
-- forEach(), map() 等方法
-
-数组是 iterable, 可以用
-
-- for...of
-- values(), keys(), entries()
-
-## Array-like object
-
-有 index，length 的 object
-
-```js
-document.body.children // collections
-```
-
-Array-like object 不是数组，length 不会自动变化，也没有数组方法。不过可以间接使用数组方法。
-
-将 Array-like object 转为数组
-
-```js
-Array.prototype.slice.call(document.body.children)
-```
+- [遍历数组](loop.md)
+- [Array-like object](array-like.md)
+- [增删数组元素](push.md)

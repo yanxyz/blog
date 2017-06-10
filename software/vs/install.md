@@ -2,9 +2,9 @@
 permalink: /software/vs/install/
 ---
 
-# Visual Studio 安装
+# 安装 Visual Studio
 
-Visual Studio Community 可以免费使用，不过也需要注册一个账号，不然试用期过了就不能用了。
+Visual Studio Community 免费使用，不过也需要注册一个账号，不然试用期过了就不能用了。
 
 ## VS2017
 

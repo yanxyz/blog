@@ -1,5 +1,5 @@
 ---
-permalink: /csharp/lang/classes/
+permalink: /csharp/lang/classes/classes/
 ---
 
 # C# Classes
@@ -22,11 +22,11 @@ classes 有这些 Members：
 
 - Fields
 - Constants
-- [Properties](./properties.md)
-- [Methods](./methods.md)
-- [Events](../events/index.md)
-- [Indexers](../indexers/index.md)
-- [Constructors](./constructors.md)
+- [Properties](properties.md)
+- [Methods](methods.md)
+- [Events](events.md)
+- [Indexers](indexers.md)
+- [Constructors](constructors.md)
 - Destructors
 - Operators
 - Nested Types

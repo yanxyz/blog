@@ -17,42 +17,27 @@
 - [Basic](basic.md)
 - [Types](types.md)
     - [Numeric Types](numeric.md)
-- [Strings](strings.md)
+    - [Strings](strings.md)
 - [Arrays](arrays.md)
 - [Expressions](expressions.md)
     <!-- - [Pattern Matching](pattern-matching.md) -->
-- [Statements](statements.md)
+<!-- - [Statements](statements.md) -->
 - [Exceptions](exceptions.md)
 - [Namespaces](namespaces.md)
 - [Tuples](tuples.md)
 - [Classes](classes.md)
-    - [Properties](properties.md)
-    - [Methods](methods.md)
-    - [Constructors](constructors.md)
-    - [Events](events.md)
-    - [Indexers](index.md)
-    - [Accessibility](accessibility.md)
-    - [Object and Collection Initializers](initializers.md)
-    - [Inheritance](inheritance.md)
-    - [virtual 和 override](virtual.md)
-    - [abstract](abstract.md)
-    - [sealed](sealed.md)
-    - [static](static.md)
-    - [partial](partial.md)
-    - [Anonymous Types](anonymous-types.md)
-    - [Anonymous Functions](anonymous-functions.md)
 - [Structs](structs.md)
 - [Interfaces](interfaces.md)
 - [Enumeration Types](enums.md)
-- [Delegates](delegates.md)
+<!-- - [Delegates](delegates.md) -->
 - [Generics](generics.md)
-- [Iterators](iterators.md)
-- [LINQ Query Expressions](linq.md)
-- [Namespaces](namespaces.md)
+<!-- - [Iterators](iterators.md) -->
+<!-- - [LINQ Query Expressions](linq.md) -->
+<!-- - [Namespaces](namespaces.md) -->
 <!-- - [Nullable Types](nullable-types.md) -->
 <!-- - [Unsafe Code and Pointers](unsafe-code-pointers/index.md) -->
 <!-- - [Assemblies and the Global Assembly Cache](concepts/assemblies-gac/index.md) -->
-- [Attributes](attributes.md)
+<!-- - [Attributes](attributes.md) -->
 <!-- - [Collections](concepts/collections.md) -->
 <!-- - [File System and the Registry)(file-system/file-system-and-the-registry.md) -->
 <!-- - [Interoperability](interop/interoperability.md) -->

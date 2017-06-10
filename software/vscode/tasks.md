@@ -17,3 +17,10 @@ permalink: /software/vscode/tasks/
 结束在后台运行的任务，在命令面板 (`F1`) 中选择 'Tasks: Terminate Running Task' 命令。
 
 [tasks 使用 extensions](https://code.visualstudio.com/updates/v1_11#_tasks)
+
+task.json
+
+```
+"version": "2.0.0"
+"runner": "terminal", // 在 内置 terminate 中运行
+```

@@ -1,5 +1,5 @@
 ---
-permalink: /javascript/lang/objects/enumeration/
+permalink: /javascript/lang/objects/loop/
 ---
 
 # 遍历对象属性
@@ -13,13 +13,13 @@ permalink: /javascript/lang/objects/enumeration/
 method | Symbol | Nonenumerable | Inherited
 ------ | ------ | ------------- | ----------
 `Object.keys()` <br> `Object.values()` <br> `Object.entries()`  | - | - | -
-`.hasOwnProperty()`       | Y | Y | -
+`.hasOwnProperty()` | Y | Y | -
 `.propertyIsEnumerable()` | Y | Y | -
-`Object.getOwnPropertyNames()`       | - | Y | -
+`Object.getOwnPropertyNames()` | - | Y | -
 `Object.getOwnPropertyDescriptors()` | Y | Y | -
 `Reflect.ownKeys()` | Y | Y | -
-`for...in`          | - | Y | Y
-`in` operator       | Y | Y | Y
+`for...in` | - | Y | Y
+`in` operator | Y | Y | Y
 
 名字中包含 `Own` 的方法只处理自身属性。
 
