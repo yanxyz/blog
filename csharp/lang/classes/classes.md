@@ -35,9 +35,9 @@ classes 有这些 Members：
 
 ## Fields
 
-Fields 通常为 private，由 properties，methods, Indexers 修改。
+Fields 通常为 private，然后由 properties，methods, Indexers 修改。
 
-Fields 可以用 readonly modifier，只能在声明或 constructor 中赋值。
+Fields 使用 readonly modifier 之后只能在声明或 constructor 中赋值。
 
 ## Constants
 

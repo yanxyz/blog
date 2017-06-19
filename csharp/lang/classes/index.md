@@ -17,4 +17,3 @@
 - [static](static.md)
 - [partial](partial.md)
 - [Anonymous Types](anonymous-types.md)
-- [Anonymous Functions](anonymous-functions.md)

@@ -51,7 +51,6 @@ var dict = new Dictionary<string, string>
 };
 ```
 
-Visual Studio 不支持格式化 initializers。
 
 ## See Also
 

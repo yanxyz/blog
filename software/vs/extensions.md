@@ -8,12 +8,14 @@ permalink: /software/vs/extensions/
 
 [Visual Studio marketplace](https://marketplace.visualstudio.com/vs)
 
-点击菜单 `Tools > Extensions and Updates...` 打开扩展管理对话框。
+点击菜单 **Tools > Extensions and Updates...** 打开扩展管理对话框。
 
+- Open in External Browser 在浏览中打开链接
+- End of Line 显示行结束符
 - CodeMaid
 - MultiEditing 多点编辑
-- Hide Main Menu 隐藏主菜单
 - ReSharper 付费扩展
+- Hide Main Menu 隐藏主菜单
 
 ## EditorConfig
 

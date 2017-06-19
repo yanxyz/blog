@@ -26,9 +26,7 @@ struct 是值类型，不能继承，不过可以实现接口。
 
 ## constructor
 
-struct 可以有多个 constructors。
-
-struct 不能定义 default constructor（没有参数），因为 compiler 会自动生成一个。这个 default constructor 在以 new 实例化 struct 时调用。它不是一定要使用，因为struct 可以直接赋值使用。
+struct 可以有多个 constructors。不能定义 default constructor（没有参数的 constructor），因为 compiler 会自动生成一个，这个 default constructor 在以 new 实例化 struct 时调用。它不是一定要使用，因为 struct 可以直接赋值使用。
 
 ```cs
 int i = new int();

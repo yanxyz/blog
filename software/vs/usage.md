@@ -67,8 +67,6 @@ VS2015 菜单 **File > Advanced Save Options...** 可以修改当前文件的换
 
 点击菜单 **Tools > External Tools...** 打开 External Tools 对话框。命令参数等可以使用 VS 提供的变量。添加的外部工具在菜单  `Tools` 下访问。
 
-## Git
+## XAML
 
-状态栏上显示了当前分支等信息。
-
-目前不支持 SSH 协议。
+**XAML Desinger** setting 修改窗口默认的分割方向。
