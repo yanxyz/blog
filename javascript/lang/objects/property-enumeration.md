@@ -1,8 +1,8 @@
 ---
-permalink: /javascript/lang/objects/loop/
+permalink: /javascript/lang/objects/property-enumeration/
 ---
 
-# 遍历对象属性
+# JavaScript 遍历对象属性
 
 对象属性有这种情形
 
@@ -15,10 +15,12 @@ method | Symbol | Nonenumerable | Inherited
 `Object.keys()` <br> `Object.values()` <br> `Object.entries()`  | - | - | -
 `.hasOwnProperty()` | Y | Y | -
 `.propertyIsEnumerable()` | Y | Y | -
-`Object.getOwnPropertyNames()` | - | Y | -
+`Object.getOwnPropertyNames()`    | - | Y | -
+`Object.getOwnPropertySymbols()`  | Y | Y | -
+`Object.getOwnPropertyDescriptor()`  | Y | Y | -
 `Object.getOwnPropertyDescriptors()` | Y | Y | -
 `Reflect.ownKeys()` | Y | Y | -
-`for...in` | - | Y | Y
+`for...in`    | - | - | Y
 `in` operator | Y | Y | Y
 
 名字中包含 `Own` 的方法只处理自身属性。

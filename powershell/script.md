@@ -30,6 +30,16 @@ powershell .\hello.ps1
 powershell -h  # 帮助
 ```
 
+PowerShell 将位置参数从 -Command 改为 -File
+
+```powershell
+powershell foo.ps1
+powershell -File foo.ps1
+powershell.exe -Command Get-Command
+```
+
+<https://github.com/PowerShell/PowerShell/releases/tag/v6.0.0-beta.3>
+
 ## 脚本参数
 
 在脚本内 `@Arg` 变量保存着传给脚本的参数，它是一个数组，从 0 开始。
@@ -40,9 +50,9 @@ $PSCommandPath # 脚本路径
 @Arg[0]        # 脚本的第一个参数
 ```
 
-脚本可以使用 [param 语句](lang/param.md)，使用它可以让脚本像 cmdlet 一样，实现必选参数，开关参数，参数验证等功能；并且 PowerShell console 可以补全参数名字。
+脚本可以使用 [param 语句](lang/param.md)，从而让脚本像 cmdlet 一样，实现必选参数，开关参数，参数验证等功能；并且 PowerShell console 可以补全参数名字。
 
 ## 开发工具
 
-- Windows PowerShell ISE，系统内置，搜索 ISE 启动。
-- [VSCode](../software/vscode/languages/powershell.md)
+- Windows PowerShell ISE，Windows 内置软件，搜索 ISE 启动。
+- [VSCode](/software/vscode/languages/powershell.md)

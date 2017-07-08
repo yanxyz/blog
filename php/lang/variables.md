@@ -13,9 +13,6 @@ $message = 'hello php';
 echo $message;
 ```
 
-变量的类型可以动态转换。
-
-
 `isset()` 用于判断变量是否初始化。
 
 - [PHP isset() vs empty() vs is_null()](https://www.virendrachandak.com/techtalk/php-isset-vs-empty-vs-is_null/)

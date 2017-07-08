@@ -2,41 +2,70 @@
 permalink: /powershell/file/
 ---
 
-# PowerShell 文件
+# PowerShell 文件操作
 
-## Item
+文件读写的方法有多种，关键是编码问题。
+
+## Content
 
 ```powershell
-Get-Command *item
+Get-Command *content
 ```
 
-### New-Item
+### Get-Content
 
-```
-New-Item a.txt
-```
-
-创建文件
-
-- 如果创建文件成功则返回这个文件（`System.IO.DirectoryInfo`）。
-- 如果文件已经存在则抛出错误。
-
-```
-New-Item a.txt -Value "hello"
+```powershell
+$a = Get-Content test.txt
+$a.GetType()
 ```
 
-创建文件并写入内容。
+Get-Content 返回一个数组，包含每行文本。
 
-创建文件的方法有很多:
+选项
+
+- `-TotalCount`，别名 Head，默认值为 -1，表示读取所有的行。
+- `-Tail` 最后几行
+- `-ReadCount` 每次读几行，默认值为 1。0 表示一次读完。
+
+```powershell
+$a =
+
+```
+
+## Set-Content
+
+文件写入内容有多种方式
+
+```powershell
+Set-Content Set-Content.txt -Value "hello 你好"
+New-Item newitem.txt -Value "hello 你好"
+"hello 你好" > 'redirection.txt'
+"hello 你好" | Out-File 'outfile.txt'
+```
 
 - New-Item，编码为 UTF8。
-- Redirection，编码为 Unicode(UTF16 LE，包含 BOM)。
-- Out-File，可以指定编码，默认编码为 Unicode(UTF16 LE，包含 BOM)。
-- Set-Content，可以指定编码，默认编码为 ANSI(中文系统为 GBK)。
+- Set-Content，`-Encoding` 指定编码，默认编码为 ANSI(中文系统为 GBK)。
+- Redirection，编码为 Unicode(UTF16 LE BOM)。
+- Out-File，`-Encoding` 指定编码，默认编码为 Unicode(UTF16 LE BOM)。
 
 <https://docs.google.com/spreadsheets/d/1QnD8AQnNkgcdwgrJyt8Z8DC3me85m_HgaY3LoCbi1us/>
 
-提示：如果脚本包含中文（即使是注释），脚本编码应使用 GBK 或 UTF8 BOM，不然会出现乱码或解析错误。
+如果脚本包含中文（即使是注释），脚本编码应使用 GBK 或 UTF8 BOM，不然会出现乱码或解析错误。
+
+## Select-String
+
+```powershell
+Select-String *.txt -pattern "hello world" | Format-List
+```
+
+搜索当前目录下 txt 文件包含 "hello world" 的行。
+
+```powershell
+Select-String *.txt -pattern "hello world" | Select-Object Filename
+```
+
+同上，只显示文件名。
+
 
 ### Copy-Item
 
@@ -111,61 +140,3 @@ Get-ChildItem *.txt | Rename-Item -NewName { $_.name -Replace '\.txt','.log' }
 
 将目录下所有的 txt 文件改为 log 文件。`-Replace` 操作符第一个参数是正则表达式，`\.` 为转义。
 
-## Get-Item
-
-获取文件对象。若文件不存在则抛出错误。
-
-```powershell
-$a = Get-Item a.txt
-$a.GetType().FullName        # System.IO.FileInfo
-$a -is [System.IO.FileInfo]  # True，是文件
-
-$a | Get-Member
-$a.Name            # 文件名字
-$a.DirectoryName   # 文件所在目录的路径
-```
-
-## Get-ChildItem
-
-对于文件，Get-ChildItem 同 Get-Item。
-
-### Invoke-Item
-
-```powershell
-Invoke-Item a.txt
-```
-
-用关联程序打开文件。
-
-## Content
-
-```powershell
-Get-Command *content
-```
-
-### Get-Content
-
-读取文件的内容
-
-### Set-Content
-
-```powershell
-# 获取目录 test 指定的属性
-Get-ItemPropertyValue test -Name
-```
-
-## ItemProperty
-
-```powershell
-Get-Command *itemprop*
-```
-
-`Get-ItemProperty file | Format-List`
-查看文件全部属性
-
-`Get-ItemPropertyValue file -Mode`
-获取文件某个属性的值
-
-## New-TemporaryFile
-
-创建临时文件

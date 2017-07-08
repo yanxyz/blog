@@ -1,0 +1,5 @@
+---
+permalink: /javascript/network/fetch/
+---
+
+#

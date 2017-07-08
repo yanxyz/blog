@@ -106,17 +106,21 @@ flex items 下面属性
 ### flex
 
 ```
-Value: none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]
+Value: none | flex-grow flex-shrink flex-basis
 Initial: 0 1 auto
 ```
 
-这是一个 shorthand 属性。
+这是一个简写属性。
 
 property    | omitted | initial
 ----------  | :-----: | :-----:
 flex-grow   | 1       | 0
 flex-shrink | 1       | 1
 flex-basis  | 0       | auto
+
+omitted 的意思是在 flex 中没有指定。
+
+flex 的值可以使用这些关键字
 
 keyword  | value    | description
 -------  | -------- | ------------
@@ -143,7 +147,7 @@ Initial: 1
 ### flex-basis
 
 ```
-Value: content | <‘width’>
+Value: content | <width>
 Initial: auto
 ```
 

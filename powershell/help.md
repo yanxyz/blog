@@ -16,6 +16,7 @@ Get-Alias -?
 本地帮助并不完整。查看某个 cmdlet 在线帮助：
 
 ```powershell
+Get-Help Get-Help -ShowWindow
 Get-Help Get-Help -online
 ```
 

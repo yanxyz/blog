@@ -31,13 +31,52 @@ help about_Arithmetic_Operators
 
 ## Comparison Operators
 
-比较操作符
+比较操作符 [`help about_Comparison_Operators`](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_comparison_operators)
+
+关于大小写，例如
+
+- `-eq`，不区分大小写
+- `-ceq`，区分大小写
+- `-ieq`，明确指明区分大小写
+
+`-contains`, `-in`, `-is` 等始终返回 Boolean value。除此之外，如果 input
+
+- 是 scalar ，则返回 Boolean value
+- 是 collenction，则返回匹配的 collection
 
 ```powershell
-# -eq -ne -gt -ge -lt -le
-# -Like -NotLike -Match -NotMatch
-# -Contains -NotContains -In -NotIn
-help about_Comparison_Operators
+"abc" -eq "abc"
+# true
+
+"abc" -eq "abc", "def"
+# false
+
+"abc", "def" -eq "abc"
+# "abc"
+```
+
+`-like` 使用通配符
+
+```powershell
+"Windows PowerShell" -like "*shell"
+# true
+```
+
+`-match` 使用 regex。如果 input 是 scalar，将修改 $matches 自动变量
+
+```powershell
+"Sunday" -match "sun"
+$matches
+```
+
+`-contains`
+
+```powershell
+"abc", "def", "ghi" -contains "abc"
+# true
+
+"abc", "def", "ghi" -contains "abc", "def"
+# false
 ```
 
 ## Logical Operators

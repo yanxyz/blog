@@ -6,8 +6,7 @@ permalink: /software/xampp/apache/
 
 ## 虚拟主机
 
-查看 [Apache Virtual Host documentation](http://httpd.apache.org/docs/2.4/vhosts/)，了解基本概念。
-这里只关注 Name-based Virtual Hosts。
+解基本概念见 [Apache Virtual Host documentation](http://httpd.apache.org/docs/2.4/vhosts/)，这里只关注 Name-based Virtual Hosts。
 
 在 XAMPP 安装目录，apache/conf/httpd.conf 定义了默认的虚拟主机 localhost
 

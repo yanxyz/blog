@@ -13,7 +13,14 @@ permalink: /css/z-index/
 - opacity
 - flex item
 
-`z-index: auto | integer`
+## z-index property
 
-- auto, 指定 box 在当前 stacking context 的层级为 0，不创建新的 stacking context
-- integer, 指定 box 在当前 stacking context 的层级，并创建新的 stacking context
+```
+Value: auto | integer
+```
+
+auto, 指定 box 在当前 stacking context 的层级为 0，不创建新的 stacking context
+
+integer, 指定 box 在当前 stacking context 的层级，并创建新的 stacking context。
+
+z-index 是如何比较的？

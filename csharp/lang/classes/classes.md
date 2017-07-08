@@ -27,7 +27,7 @@ classes 有这些 Members：
 - [Events](events.md)
 - [Indexers](indexers.md)
 - [Constructors](constructors.md)
-- Destructors
+- Finalizers
 - Operators
 - Nested Types
 
@@ -64,7 +64,9 @@ int birthstones = Calendar.months;
 
 用户定义的 operators 必须是 public。
 
-## Destructors
+## Finalizers
+
+Finalizers 也称为 destructors。
 
 ```cs
 class Car

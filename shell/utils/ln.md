@@ -4,7 +4,7 @@ permalink: /shell/ln/
 
 # ln
 
-本文讲的是 Linux 链接。Windows 链接不大一样，见 [mklink](../../windows/mklink.md)。
+本文讲的是 Linux 链接。Windows 链接不大一样，见 [mklink](/cmd/utils/mklink.md)。
 
 ```sh
 ln [OPTION]... [-T] TARGET LINK_NAME

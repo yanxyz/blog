@@ -1,17 +1,5 @@
 # C\#
 
-[C# Guide](https://docs.microsoft.com/en-us/dotnet/articles/csharp/) 有这样几个部分：
-
-- _Tour of C#_ C# 语法概览。
-- _C# Concepts_ C# 概念概览。
-- _C# Programming Guide_ C# 语法详解。
-
-建议在 [Visual Studio](../software/vs/index.md) 中练习，至少有这样几个作用：
-
-- 自动格式化代码，帮助熟悉 C# 的代码规范。
-- 智能提示，帮助熟悉 API。
-- 在 fields, methods 等上面按 F1，可以打开它的帮助。安装离线帮助后，查看 API 速度快。
-
 ## 目录
 
 - [Basic](basic.md)
@@ -29,7 +17,7 @@
 - [Structs](structs.md)
 - [Interfaces](interfaces.md)
 - [Enumeration Types](enums.md)
-<!-- - [Delegates](delegates.md) -->
+- [Delegates](delegates.md)
 - [Generics](generics.md)
 <!-- - [Iterators](iterators.md) -->
 <!-- - [LINQ Query Expressions](linq.md) -->
@@ -43,3 +31,6 @@
 <!-- - [Interoperability](interop/interoperability.md) -->
 <!-- - [Reflection](reflection.md) -->
 
+## 参考
+
+- [C# Guide](https://docs.microsoft.com/en-us/dotnet/articles/csharp/)

@@ -32,6 +32,8 @@ public Employee(int weeklySalary, int numberOfWeeks)
     : this(weeklySalary * numberOfWeeks)  // this 指向 Employee(long n)
 ```
 
+constructor 如果只有一个语句，可以使用 [expression body definitions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
+
 ## Private Constructors
 
 Private Constructors 阻止实例化。

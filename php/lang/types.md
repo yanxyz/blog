@@ -4,29 +4,30 @@ permalink: /php/lang/types/
 
 # PHP types
 
-PHP 有 8 种原始类型
+PHP 是动态类型语言，变量的类型由运行时决定。
 
-- 标量类型：boolean, integer, float, string
-- 符合类型：array, object, callable
-- 特殊类型：resource, null
-
-## Booleans
-
-布尔类型有两个值：`true`, `false`，不区分大小写。
-
-## Numbers
-
-PHP 有两种数字类型：
-
-- integer, 整数
-- float, 浮点数
-
-整数有下面几种直接量：
+查看变量的类型
 
 ```php
-$a = 10;   // 十进制
-$a = 010;  // 八进制
-$a = 0x10; // 十六进制
-$a = 0b10; // 二进制
+$var = 'hello world';
+var_dump($var);
+echo gettype($var);
 ```
+
+判断变量的类型，is_type 函数，如 is_int()。
+
+转换变量的类型，cast 或 settype()。
+
+#### boolean
+
+boolean 有两个值：true, false。这两个常量不区分大小写。
+
+假值，注意
+
+- string，'0'
+- array, 空数组
+
+#### null
+
+null 有一个值：null。这个常量不区分大小写。
 

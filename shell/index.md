@@ -13,6 +13,8 @@ permalink: /shell/
 
 Utils
 
-- [curl](utils/curl.md)
+- [文件和目录操作](utils/fs.md)
+- [压缩包](utils/tar.md)
 - [ln](utils/ln.md)
+- [curl](utils/curl.md)
 - [make](utils/make.md)

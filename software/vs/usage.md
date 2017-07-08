@@ -53,6 +53,8 @@ VS2015 菜单 **File > Advanced Save Options...** 可以修改当前文件的换
 - 格式化文档 `Ctrl+K, Ctrl+D`，格式化选中文档 `Ctrl+K, Ctrl+F`
 - 创建新项目 `Ctrl+Shift+N`
 
+**Edit > Cycle Clipboard Ring Ctrl+Shift+V**，剪贴板中保存着最近 20 次的复制。
+
 ## 调试
 
 ### Diagnostics Tools

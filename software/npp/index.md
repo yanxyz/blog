@@ -3,7 +3,7 @@
 Notepad++ 可以作为记事本（`notepad.exe`）的替换
 
 - 记事本在保存 UTF8 文件时会自动添加 BOM，这会导致 PHP 等出现问题。
-- Notepad++ 文件编码识别准确，不像 Sublime Text 等编辑器不能识别 GBK。
+- Notepad++ 文件编码识别比较准确，不像 Sublime Text 等编辑器不能识别 GBK。
 - Notepad++ 支持对 HTML 等代码的高亮，对于普通用户简单够用。
 
 ## 安装

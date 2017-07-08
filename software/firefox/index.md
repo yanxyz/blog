@@ -4,9 +4,9 @@ Firefox（火狐浏览器）
 
 ## 安装
 
-从官网下载[中文版](https://www.mozilla.org/en-US/firefox/all/#zh-CN)，不推荐使用国内定制版本。
+从官网下载[中文版](https://www.mozilla.org/en-US/firefox/all/#zh-CN)，不建议使用国内定制版本。
 
-开发者可考虑使用 [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)。
+开发者可使用 [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)。
 
 ## 用法
 

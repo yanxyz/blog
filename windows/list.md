@@ -41,7 +41,7 @@ permalink: /windows/list/
 
 本地播放器：
 
-- [SMPlayer](http://smplayer.sourceforge.net/en/downloads)
+- [SMPlayer](http://smplayer.sourceforge.net/en/downloads)，[下载](https://www.fosshub.com/SMPlayer.html)
 - [MPlayer WW](http://www.mplayer-ww.com/) 最新版本要[管理员权限](http://bbs.mplayer-ww.com/viewtopic.php?id=2270)
 
 录屏:

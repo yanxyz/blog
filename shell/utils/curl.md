@@ -42,3 +42,25 @@ curl -i https://api.github.com/users/octocat/orgs
 curl -i -u username -d '{"scopes":["public_repo"]}' https://api.github.com/authorizations
 curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
 ```
+
+发送表单
+
+```sh
+# -X, --request
+# -F, --form
+curl -X POST -F 'username=yan' -F 'password=123456' url
+```
+
+发送 JSON
+
+```sh
+# -H, --header
+# -d, --data
+curl -X POST -H 'Content-Type: application/json' -d '{"username":"yan","password":"123456"}' url
+```
+
+上传文件
+
+```sh
+curl -X POST -F 'image=picture.jpg' url
+```

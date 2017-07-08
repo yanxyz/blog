@@ -23,11 +23,13 @@ PowerShell 是微软出品的 shell，建立在 .Net framework 上，当前版�
 
 常见操作
 
-- [文件](tasks/file.md)
-- [目录](tasks/dir.md)
-- [路径](tasks/path.md)
-- [符号链接](tasks/symlink.md)
+- 文件系统
+  - [文件和目录基本操作](tasks/fs.md)
+  - [文件读写](tasks/fs.md)
+  - [位置（当前目录）](tasks/location.md)
+  - [路径](tasks/path.md)
+  - [符号链接](tasks/symlink.md)
 - [环境变量](tasks/env.md)
+- [注册表](tasks/registry.md)
+- [剪贴板](tasks/clipboard.md)
 - [后台运行 jobs](tasks/jobs.md)
-<!-- - [注册表](tasks/reg.md) -->
-<!-- - [剪贴板](tasks/clipboard.md) -->

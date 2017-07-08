@@ -114,7 +114,9 @@ Snippets 默认在列表的底部，可以修改配置 `"editor.snippetSuggestio
 
 ## Multi-root workspaces
 
-multi-root (multiple project folder) workspaces
+目前只能有一个 workspace，即只能有一个根目录。
+
+[Multi-root workspaces](https://code.visualstudio.com/updates/v1_13#_multiroot-workspaces) 在计划当中。
 
 ## macOS
 

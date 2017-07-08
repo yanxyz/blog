@@ -11,4 +11,5 @@ Windows 命令提示符（Command Prompt）
 
 Utils:
 
+- [findstr](utils/findstr.md)
 - [mklink](utils/mklink.md)
