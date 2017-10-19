@@ -1,0 +1,7 @@
+github: [metadata]
+# theme: jekyll-theme-midnight
+title: Ivan Yan 的笔记
+
+exclude:
+  - forcepush.sh
+  - "*.sublime-*"
