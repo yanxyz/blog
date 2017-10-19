@@ -10,7 +10,7 @@ VSCode(Visual Studio Code) 是微软出品的一个轻量 IDE，与 Atom 一样�
 ## 目录
 
 - [安装](install.md)
-- [扩展](extensions.md)
+- [扩展](extensions/index.md)
 - [主题](themes.md)
 - [文档](docs.md)，将部分文档放这里，方便查阅。
 
