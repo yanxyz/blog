@@ -17,4 +17,4 @@
 - [Software](software/index.md)
 - [Windows](windows/index.md)
 - [CMD](cmd/index.md)
-<!-- - [VBScript](https://yanxyz.github.io/vbscript/) -->
+- [VBScript](https://yanxyz.github.io/vbscript/)

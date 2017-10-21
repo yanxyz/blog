@@ -1,8 +1,8 @@
 # Note
 
-<http://note.yanxyz.net/>
+[我的笔记](https://yanxyz.github.io/note/)
 
-**不建议 fork**。当改动比较大时，我会 [force push](forcepush.sh)，这样将丢掉 commits 历史——我不关心这个，`fork` 没有意义。
+**不建议 fork**。当改动比较大时，我会重新初始化，这样将丢掉 commits 历史，`fork` 不能同步。
 
 ## 本地预览
 
