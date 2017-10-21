@@ -8,7 +8,7 @@ permalink: /ruby/install/
 
 ### Ruby >= 2.4
 
-下载 [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases)。安装向导最后一步安装 msys2，可跳过。安装完成后打开命令提示符运行：
+下载 [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases)。安装向导最后一步安装 msys2，可跳过。安装完成后在命令行中运行：
 
 ```sh
 ruby --version
@@ -16,7 +16,7 @@ ruby --version
 
 msys2 的作用是为 Ruby Package（Gem）提供编译环境。RubyInstaller2 在查找 msys2 时只查找默认安装位置，msys2 x64 为 `C:\msys64`。如果之前已经安装了 msys2，可以创建一个链接
 
-```sh
+```dos
 mklink /j C:\msys64 path\to\msys2
 ```
 

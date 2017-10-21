@@ -3,28 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <meta name="google-site-verification" content="C2UZw84BZju0E9lXsQc9fZyBVIBhMpaoRcI62PjRZws">
   <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
   {% if site.github.owner_name %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   {% else %}
-  <link rel="stylesheet" href="{{ '/assets/css/primer.style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}">
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script>
+    var SITE_BASEURL = '{{ '/' | relative_url }}'
+  </script>
 </head>
 <body>
-  {% assign home_page = "/" | relative_url %}
   <header id="site-header">
     <div class="inner">
       <nav id="site-nav">
-        <a href="{{ home_page }}">Home</a>
+        <a href="{{ '/' | relative_url }}" id="home-link">Home</a>
       </nav>
     </div>
   </header>
   <main id="site-main">
     <article class="inner markdown-body">
-      {{ content }}
       <!-- <a href="http://yanxyz.net">Ivan Yan</a> 的笔记 -->
+      {{ content }}
     </article>
   </main>
   <footer id="site-footer">
@@ -34,11 +35,6 @@
   </footer>
 
   {% include icons.html %}
-
-  <script>
-    var HOME_PAGE = '{{ home_page }}'
-    var SITE_URL = '{{ site.url }}'
-  </script>
 
   {% include alert-browser.html %}
 

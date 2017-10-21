@@ -20,3 +20,5 @@ Sublime Text，VSCode 等都有 EditorConfig 插件。
 
 - [.editorconfig example](.editorconfig)
 - [ESLint .editorconfig](https://github.com/eslint/eslint/blob/master/.editorconfig)
+
+

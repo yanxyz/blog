@@ -1,10 +1,11 @@
-# pages preview
 _site
 .sass-cache
 .jekyll-metadata
-/Gemfile
-/Gemfile.lock
+Gemfile
+Gemfile.lock
 
-/_images
-/_temp
-/*.sublime-*
+_images
+_temp
+default.css
+.vscode
+*.sublime-*

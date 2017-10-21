@@ -3,7 +3,7 @@
  * compat: ES2015
  */
 
-/* global HOME_PAGE */
+/* global SITE_BASEURL */
 
 document.addEventListener('DOMContentLoaded', () => {
   nav()
@@ -20,19 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
 function nav() {
   const INDEX = '/index.html'
   let pathname = location.pathname
-  // 跳过首页
-  if (pathname === '/' || pathname === INDEX) return
 
   // 删除末尾 '/index.html'
   if (pathname.endsWith(INDEX)) {
     pathname = pathname.slice(0, - INDEX.length)
   }
+  // 跳过首页
+  if (pathname === SITE_BASEURL) return
+
   // 删除末尾 '/'
   while (pathname.endsWith('/')) {
     pathname = pathname.slice(0, -1)
   }
+
   // 删除开头 HOME_PAGE
-  let path = HOME_PAGE
+  let path = SITE_BASEURL
   const parts = pathname.slice(path.length).split('/')
   const list = [`<a href="${path}">Home</a>`]
   const n = parts.length - 1
