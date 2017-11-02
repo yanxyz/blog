@@ -1,7 +1,3 @@
----
-permalink: /cmd/env/
----
-
 # Windows 环境变量
 
 Windows 环境变量（Environment Variables）

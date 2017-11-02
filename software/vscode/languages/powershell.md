@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/powershell/
----
-
 # VSCode PowerShell
 
 ## PowerShell Extension

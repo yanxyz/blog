@@ -1,7 +1,3 @@
----
-permalink: /ruby/jekyll/
----
-
 # Jekyll
 
 Jekyll，静态网站生成器。Github Pages 用的便是它。

@@ -19,7 +19,6 @@
 
 浏览器
 
-- [Chrome](chrome/index.md)
 - [Firefox](firefox/index.md)
 - [Edge](edge/index.md)
 - [Internet Explorer](ie/index.md)

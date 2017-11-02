@@ -1,7 +1,3 @@
----
-permalink: /ruby/gem/
----
-
 # Gem
 
 Gem 是 Ruby 的包管理器。

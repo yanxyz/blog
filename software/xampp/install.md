@@ -1,7 +1,3 @@
----
-permalink: /software/xampp/install/
----
-
 # XAMPP 安装与卸载
 
 ## 安装
@@ -22,7 +18,7 @@ permalink: /software/xampp/install/
 
 配置 XAMPP Control Panel，让 Apache、MySQL 等随 Panel 自动启动
 
-![](/uploads/xampp/autostart.png)
+![](images/autostart.png)
 
 点击 Service 勾选框可以将 Apache 等注册为系统服务。
 不过不推荐，因为可能导致冲突。

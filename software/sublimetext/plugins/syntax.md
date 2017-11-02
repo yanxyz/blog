@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/plugins/syntax/
----
-
 # 语法文件
 
 Sublime Text 可以用两种文件 `.sublime-syntax` 与 `.tmLanguage` 定义语法高亮。

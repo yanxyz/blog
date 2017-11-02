@@ -1,7 +1,3 @@
----
-permalink: /software/virtualbox/ubuntu/
----
-
 # VirtualBox Ubuntu
 
 Host: Windows 10; Guest: Ubuntu
@@ -26,7 +22,7 @@ Host: Windows 10; Guest: Ubuntu
 
 点击光盘图标加载 Ubuntu ISO
 
-![](/uploads/virtualbox/storage.png)
+![](images/storage.png)
 
 点击主界面“启动”按钮，启动虚拟电脑。
 
@@ -67,7 +63,7 @@ sudo apt-get upgrade
 
 在“共享文件夹”配置，添加主机上的一个文件夹。通过它，可以在主机与虚拟机之间传递文件。
 
-![](/uploads/virtualbox/storage.png)
+![](images/storage.png)
 
 - “固定分配”
 - “自动挂载”

@@ -1,7 +1,3 @@
----
-permalink: /linux/account/
----
-
 # Linux 账户
 
 

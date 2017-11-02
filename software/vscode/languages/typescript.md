@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/languages/typescript/
----
-
 # VSCode TypeScript
 
 ## 不同版本

@@ -1,7 +1,3 @@
----
-permalink: /software/vs/install/
----
-
 # 安装 Visual Studio
 
 Visual Studio Community 免费使用，不过也需要注册一个账号，不然试用期过了就不能用了。

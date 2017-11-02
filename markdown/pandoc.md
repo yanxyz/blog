@@ -1,7 +1,3 @@
----
-permalink: /markdown/pandoc/
----
-
 # Pandoc
 
 Pandoc 是一个通用转换器，可以在 Markdown, HTML, reStructuredText, EPUB, docx 等之间相互转换。

@@ -6,13 +6,13 @@
 
 运行 `control /name Microsoft.Language` 打开“控制面板\时钟、语言和区域\语言”，点击左侧导航中的“高级设置”：
 
-![](/uploads/windows/control-language.png)
+![](../images/control-language.png)
 
 “为每个应用设置不同的输入法”，默认不勾选，在 A 应用中切换为中文输入，打开 B 应用时为为中文输入。这跟手机类似。
 
 “更改语言栏热键”
 
-![](/uploads/windows/control-language-hotkeys.png)
+![](../images/control-language-hotkeys.png)
 
 `Win+Space` | 切换输入语言和键盘（即所有的输入法）
 `Left Alt+Shift` | 切换输入语言

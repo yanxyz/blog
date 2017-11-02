@@ -1,7 +1,3 @@
----
-permalink: /windows/list/
----
-
 # 我的 Windows 软件清单
 
 ## 图片

@@ -1,7 +1,3 @@
----
-permalink: /software/vs/snippets/
----
-
 # Visual Studio Snippets
 
 [Code Snippets](https://docs.microsoft.com/en-us/visualstudio/ide/code-snippets)

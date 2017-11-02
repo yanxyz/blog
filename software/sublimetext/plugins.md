@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/plugins/
----
-
 # Sublime Text 插件
 
 使用 Package Control 来管理插件，点击菜单 `Tools > Install Package Control...` 安装。

@@ -1,10 +1,6 @@
----
-permalink: /cmd/mklink/
----
-
 # mklink
 
-Windows 提供一个命令行工具 mklink 来创建链接。
+CMD 提供一个内置命令 mklink 来创建链接。
 
 ## 链接类型
 
@@ -38,4 +34,9 @@ mklink 在创建 symbolic link 时：
 
 注意：`del link`, 如果 link 是目录链接，不会删除 link, 而会删除 link target 下的文件，这通常不是我们想要的。应该用 rmdir 删除目录链接。
 
-如何判断链接的类型以及链接的目标？建议用 [PowerShell](/powershell/tasks/symlink.md)，命令提示符下面不好做。
+如何判断链接的类型以及链接的目标？建议用 [PowerShell](/powershell/tasks/symlink.md)，CMD 不好做。
+
+
+## 资料
+
+[files - How do I create a symbolic link in Windows? - Server Fault](https://serverfault.com/questions/7109/how-do-i-create-a-symbolic-link-in-windows)

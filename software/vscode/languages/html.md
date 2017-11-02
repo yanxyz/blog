@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/languages/html/
----
-
 # VSCode HTML
 
 支持格式化代码，右键菜单 "Format Document"。

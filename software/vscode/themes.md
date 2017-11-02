@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/themes/
----
-
 # VSCode themes
 
 ## 自定义 theme color

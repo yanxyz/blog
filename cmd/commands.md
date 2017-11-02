@@ -1,7 +1,3 @@
----
-permalink: /cmd/commands/
----
-
 # cmd 常用命令
 
 在[命令提示符](cmd.md)中，路径分隔符为 `\`, `/` 是开关标志。
@@ -166,24 +162,7 @@ rem 相当于
 
 查看与修改文件属性。
 
-### start
 
-`start explorer`
-打开程序。
-
-`start text.txt`
-打开文件（以关联程序）。
-
-`start http://note.yanxyz.net`
-打开网址（以浏览器）。注意 `http://` 不可少，不然就当作本地文件了。
-
-`start "test start" /d "%P" /wait notepad test.txt` 以 notepad 编辑文件
-
-- `"test start"` 指定标题；
-- `/d` 指定程序的当前工作目录；
-- `/wait` 等待程序关闭；
-- `notepad` 指定程序；
-- `test.txt` 指定程序参数。
 
 ### kill
 

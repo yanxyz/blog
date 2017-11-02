@@ -21,7 +21,7 @@ VirtualBox Extension Pack 提供 USB 2.0，USB 3.0 等功能。VirtualBox 自身
 
 在“共享文件夹”配置，添加主机上的一个文件夹。通过它，可以在主机与虚拟机之间传递文件。
 
-![](/uploads/virtualbox/storage.png)
+![](images/storage.png)
 
 - “固定分配”
 - “自动挂载”
@@ -39,7 +39,7 @@ VirtualBox Extension Pack 提供 USB 2.0，USB 3.0 等功能。VirtualBox 自身
 在主机上我用 `xampp` 建了几个虚拟网站，比如 `y.com`，在虚拟机内怎么访问呢？在虚拟机 hosts 添加一个记录：
 
 ```
-y.com 192.168.56.1
+192.168.56.1    y.com   www.y.com
 ```
 
 这样在主机与虚拟机上都可以用 http://y.com 访问这个虚拟网站。

@@ -1,7 +1,3 @@
----
-permalink: /software/vs/help/
----
-
 # Visual Studio 帮助
 
 - [帮助](https://msdn.microsoft.com/en-us/library/dd831853.aspx)

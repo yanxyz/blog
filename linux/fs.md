@@ -1,7 +1,3 @@
----
-permalink: /linux/fs/
----
-
 # linux 文件系统
 
 ## 文件权限

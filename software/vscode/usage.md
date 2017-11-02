@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/usage/
----
-
 # VSCode 用法
 
 ## 编辑器界面

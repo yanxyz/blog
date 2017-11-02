@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/languages/python/
----
-
 # Sublime Text Python
 
 - [jedi](https://github.com/davidhalter/jedi)

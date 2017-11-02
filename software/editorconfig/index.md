@@ -1,7 +1,3 @@
----
-permalink: /software/editorconfig/
----
-
 # EditorConfig
 
 [EditorConfig](http://editorconfig.org/) 为代码文件指定 code style，如果编辑器安装了 EditorConfig 插件，编辑器将使用指定的 code style。

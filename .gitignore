@@ -4,8 +4,6 @@ _site
 Gemfile
 Gemfile.lock
 
-_images
-_temp
-default.css
+_scripts
 .vscode
 *.sublime-*

@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/usage/
----
-
 # Sublime Text 用法
 
 帮助文档：
@@ -55,7 +51,7 @@ Find All        | `Alt+F3`
 
 大小写由 "Find..." 的选项控制。
 
-![](/uploads/sublimetext/find.png)
+![](images/find.png)
 
 `Ctrl` 添加选择；`Alt` 减少选择。
 

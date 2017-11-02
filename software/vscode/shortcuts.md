@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/shortcuts/
----
-
 # VSCode 快捷键
 
 菜单 **File > Preferrences > Keyboard Shortcuts**，在这里可以查看、搜索、修改快捷键。修改 `when` 仍然需要编辑 `keybindings.json`。

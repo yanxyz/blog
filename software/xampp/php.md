@@ -1,7 +1,3 @@
----
-permalink: /software/xampp/php/
----
-
 # XAMPP PHP
 
 ## phpinfo

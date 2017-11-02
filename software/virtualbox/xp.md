@@ -1,7 +1,3 @@
----
-permalink: /software/virtualbox/xp/
----
-
 # VirtualBox XP
 
 Host: Windows 10; Guest: XP
@@ -26,7 +22,7 @@ Host: Windows 10; Guest: XP
 
 点击光盘图标加载 XP ISO
 
-![](/uploads/virtualbox/storage.png)
+![](images/storage.png)
 
 点击主界面“启动”按钮，启动虚拟电脑。
 

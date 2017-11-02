@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/languages/javascript/
----
-
 # VSCode JavaScript
 
 支持格式化代码（右键菜单 "Format Document"）
@@ -12,7 +8,7 @@ permalink: /software/vscode/languages/javascript/
 
 `F1` 打开命令面板，输入 `eslint`:
 
-![](/uploads/vscode/eslint.png)
+![](images/eslint.png)
 
 - Fix all auto-fixable problems，比如添加或者去掉分号
 

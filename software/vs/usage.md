@@ -1,7 +1,3 @@
----
-permalink: /software/vs/usage/
----
-
 # Visual Studio 用法
 
 ## 设置
@@ -70,7 +66,7 @@ VS 没有自动保存功能，在其它工具中查看项目文件时，常常�
 
 调试时自动打开分析工具。找到这个选项 "Enable Diagnostics Tools while debugging"，去掉勾选。
 
-![](/uploads/vs/enable-diagnostics-tools.png)
+![](images/enable-diagnostics-tools.png)
 
 ## 添加外部工具
 

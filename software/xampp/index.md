@@ -7,6 +7,7 @@ XAMPP 提供 apache、php、mysql 等组件，方便建立本地开发环境。
 PHP 已不支持 XP，XAMPP 当然也不再支持 XP。
 
 - [安装](install.md)
-- [Apache](apache.md)
+- [XAMPP Control Panel](xampp-control.md)
+- [Apache](apache/index.md)
 - [PHP](php.md)
 - [MySQL](mysql.md)

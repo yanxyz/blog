@@ -1,7 +1,3 @@
----
-permalink: /cmd/intro/
----
-
 # 命令提示符
 
 - [wiki cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe)

@@ -1,7 +1,3 @@
----
-permalink: /cmd/bat/
----
-
 # bat 脚本
 
 bat 脚本（batch file），文件扩展名为 `.bat` 或 `.cmd`，由 `cmd.exe` 解释执行。
@@ -40,39 +36,9 @@ rem 注释
 
 ## variables
 
-### set
-
-`set` 没有参数则显示所有的变量。也可以设置变量，注意 `=` 左右没有空格
-
-```bat
-set name=Yan
-rem 显示变量和它的值
-set name
-rem 显示变量的值
-echo %name%
-```
-
-如果变量值有空格
-
-```bat
-set "name=Ivan Yan"
-set name
-echo %name%
-```
-
-删除变量
-
-```bat
-set name=
-set name
-echo %name%
-```
-
-上面设置的变量存在于当前 session，关闭 console 之后就不存在了。
+- [set](utils/set.md)
 
 ### setlocal
-
-设置本地变量。
 
 setlocal 和 endlocal 是一对，类似于其它语言的语句块 `{}`，也可以嵌套。
 

@@ -1,14 +1,10 @@
----
-permalink: /software/totalcmd/f4menu/
----
-
 # F4Menu
 
 ### F4Menu
 
 文件只能关联到一个程序上。F4Menu 可以选择不同的程序打开文件：
 
-![](/uploads/totalcmd/f4menu.png)
+![](images/f4menu.png)
 
 下载 [F4Menu 0.55](http://download.pchome.net/system/file/fileman/detail-3266.html), 0.59 在我这有问题。
 

@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/install/
----
-
 # 安装 Sublime Text
 
 ## Windows
@@ -9,7 +5,7 @@ permalink: /software/sublimetext/install/
 下载
 
 - [Stable](https://www.sublimetext.com/3)
-- [Dev](https://www.sublimetext.com/3dev) 有最新的功能，不过只有注册用户才可以使用。
+- [Dev](https://www.sublimetext.com/3dev) 有最新的功能，只有注册用户才可以使用。
 
 ## Ubuntu
 

@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/languages/javascript/
----
-
 # Sublime Text JavaScript
 
 [JavaScriptNext syntax](https://github.com/Benvie/JavaScriptNext.tmLanguage)

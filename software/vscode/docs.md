@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/docs/
----
-
 # VSCode 文档
 
 <https://code.visualstudio.com/docs/>

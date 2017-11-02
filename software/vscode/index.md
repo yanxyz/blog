@@ -39,4 +39,5 @@ VSCode(Visual Studio Code) 是微软出品的一个轻量 IDE，与 Atom 一样�
 
 ## 参考
 
+- <https://code.visualstudio.com/docs>
 - <https://github.com/Microsoft/vscode-tips-and-tricks>

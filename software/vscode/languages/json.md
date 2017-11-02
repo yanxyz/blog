@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/languages/json/
----
-
 # VSCode JSON
 
 VSCode 支持格式化 JSON，右键菜单 "Format Document"。如果有选择文本，右键菜单还有 "Format Selection"。

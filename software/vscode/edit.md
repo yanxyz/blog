@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/edit/
----
-
 # 文件编辑
 
 

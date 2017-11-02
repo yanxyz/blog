@@ -1,7 +1,3 @@
----
-permalink: /ruby/bundler/
----
-
 # Bundler
 
 Bundler 冻结 Ruby project 所用 gems 的版本，以保证一致的开发环境。

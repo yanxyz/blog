@@ -1,7 +1,3 @@
----
-permalink: /software/xampp/mysql/
----
-
 # XAMPP MySQL
 
 MySQL 配置文件 `xampp/mysql/bin/my.ini`

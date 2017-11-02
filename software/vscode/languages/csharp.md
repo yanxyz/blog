@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/languages/csharp/
----
-
 # VSCode C\#
 
 只支持 .NET Core。

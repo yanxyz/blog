@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/tasks/
----
-
 # VSCode tasks
 
 [tasks](https://code.visualstudio.com/Docs/editor/tasks)

@@ -1,124 +1,108 @@
 /**
- * https://github.com/yanxyz/note
- * compat: ES2015
+ * 根据 pathname 创建 crumbs
  */
+function crumbs() {
+  const pathname = location.pathname
+  const indexPage = 'index.html'
+  const homeLink = document.getElementById('home-link')
+  const siteBaseUrl = homeLink.getAttribute('href')
+  if (pathname === siteBaseUrl) return
 
-/* global SITE_BASEURL */
+  const parts = pathname.slice(siteBaseUrl.length).split('/')
 
-document.addEventListener('DOMContentLoaded', () => {
-  nav()
-  insert()
-})
-
-/**
- * 根据 pathname 创建 breadcrumb
- *
- * 支持两种首页地址 HOME_PAGE：自定义域名 '/'; github.io '/note/'
- * pathname 要删掉开头的首页地址 HOME_PAGE
- * HOME_PAGE 在模板中定义
- */
-function nav() {
-  const INDEX = '/index.html'
-  let pathname = location.pathname
-
-  // 删除末尾 '/index.html'
-  if (pathname.endsWith(INDEX)) {
-    pathname = pathname.slice(0, - INDEX.length)
-  }
-  // 跳过首页
-  if (pathname === SITE_BASEURL) return
-
-  // 删除末尾 '/'
-  while (pathname.endsWith('/')) {
-    pathname = pathname.slice(0, -1)
+  // 删除末尾的 '/' 及 'index.html'
+  let arr
+  for (let i = parts.length; i-- > 0;) {
+    const p = parts[i]
+    if (!p || p === indexPage) continue
+    arr = parts.slice(0, i + 1)
+    break
   }
 
-  // 删除开头 HOME_PAGE
-  let path = SITE_BASEURL
-  const parts = pathname.slice(path.length).split('/')
-  const list = [`<a href="${path}">Home</a>`]
-  const n = parts.length - 1
+  const len = arr.length
+  if (!arr.length) return
+
+  const fragment = document.createDocumentFragment()
+  fragment.appendChild(homeLink)
+  createSeparator()
+  const n = len - 1
+  let href = siteBaseUrl
   for (let i = 0; i < n; i++) {
     const p = parts[i]
     if (!p) continue // 跳过连续的 '/'
-    path += `${p}/`
-    list.push(`<a href="${path}">${p}</a>`)
+    href += `${p}/`
+    create(p, href)
   }
-  list.push(parts[n])
-  document.getElementById('site-nav').innerHTML = list.join('<span class="divider">/</span>')
-}
+  createLastItem(arr[n])
+  // 为了消除空白，重写 container contents
+  const container = document.getElementById('site-crumbs')
+  container.textContent = ''
+  container.appendChild(fragment)
 
-function insert() {
-  // anchors
-  const entry = document.querySelector('.markdown-body')
-
-  // external links
-  entry.querySelectorAll('a[href]').forEach(a => {
-    if (a.host === location.host ||
-      a.getElementsByTagName('img').length) {
-      return
-    }
-    a.innerHTML = `<svg aria-hidden="true" class="octicon octicon-link-external" width="14" height="14"><use xlink:href="#octicon-link-external"></use></svg>` + a.textContent
-  })
-
-  const headings = entry.querySelectorAll('h2, h3')
-  // toc
-  const tocContainer = document.getElementById('toc-container')
-  if (tocContainer) buildToc(headings)
-  // anchors
-  headings.forEach(heading => {
-    const id = heading.id
-    if (!id || heading.childElementCount) return
-
-    heading.innerHTML = `<a href="#${id}" class="anchor" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" width="14" height="14"><use xlink:href="#octicon-link"></use></svg></a>` + heading.textContent
-  })
-}
-
-function buildToc(headings) {
-  const list = []
-  let p = 0
-  let nested = false
-  headings.forEach(h => {
-    const id = h.id
-    if (!id) return
-    const n = parseInt(h.tagName[1])
-    if (p) {
-      if (n > p) {
-        list.push('<ol>')
-        nested = true
-      } else if (n < p && nested) {
-        list.push('</li></ol></li>')
-        nested = false
-      } else {
-        list.push('</li>')
-      }
-    }
-
-    list.push(`<li><a href="#${id}">${h.textContent}</a>`)
-    p = n
-  })
-
-  if (nested) {
-    list.push('</li></ol></li>')
-  } else {
-    list.push('</li>')
+  function create(text, href) {
+    const a = document.createElement('a')
+    a.textContent = text
+    a.href = href
+    fragment.appendChild(a)
+    createSeparator()
   }
 
-  document.getElementById('toc').innerHTML = list.join('')
+  function createSeparator() {
+    const span = document.createElement('span')
+    span.className = 'separator'
+    span.textContent = '/'
+    fragment.appendChild(span)
+  }
 
-  const container = document.getElementById('toc-container')
-  const toggle = document.getElementById('toc-button')
-  toggle.addEventListener('click', toggleTOC)
-  document.getElementById('toc-close').addEventListener('click', toggleTOC)
-  document.body.addEventListener('click', function (e) {
-    if (e.target !== toggle && !container.contains(e.target)) {
-      document.body.classList.remove('open')
+  function createLastItem(text) {
+    const span = document.createElement('span')
+    span.textContent = text
+    fragment.appendChild(span)
+  }
+}
+
+crumbs()
+
+/**
+ * 外部链接图标
+ */
+
+document.getElementById('site-main').querySelectorAll('a').forEach(a => {
+  if (a.host !== location.host && !a.querySelector('img')) {
+    a.insertAdjacentHTML('afterBegin', '<svg aria-hidden="true" class="octicon octicon-link-external" width="14" height="14"><use xlink:href="#octicon-link-external"></use></svg>')
+  }
+})
+
+/**
+ * 标题锚点
+ */
+
+function addAnchors() {
+  const reH = /^H[2-4]$/
+  Array.from(document.querySelector('.markdown-body').children).forEach(el => {
+    if (reH.test(el.tagName)) {
+      const id = el.id
+      if (!id || el.childElementCount) return
+
+      el.innerHTML = `<a href="#${id}" class="anchor" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" width="14" height="14"><use xlink:href="#octicon-link"></use></svg></a>` + el.textContent
     }
   })
 }
 
-function toggleTOC(event) {
-  event.preventDefault()
-  event.stopPropagation()
-  document.body.classList.toggle('open')
-}
+/**
+ * 快捷键
+ */
+
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey || event.shiftKey || event.altKey || event.metaKey) return
+
+  // 't' goto top
+  if (event.code === 'KeyT') {
+    document.documentElement.scrollTop = 0;
+  }
+
+  // 'h' go home
+  if (event.code === 'KeyH') {
+    document.getElementById('home-link').click()
+  }
+})

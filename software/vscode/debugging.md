@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/debug/
----
-
 # VSCode 调试
 
 调试单个文件，`F5`。此时状态栏为紫色。

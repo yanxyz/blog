@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/snippets/
----
-
 # Snippets
 
 菜单 **File > Preferrences > User Snippets** 添加 Snippets。

@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/install/
----
-
 # 安装 VSCode
 
 Windows, Linux, Mac 三个平台都支持。
@@ -16,12 +12,15 @@ Windows, Linux, Mac 三个平台都支持。
 code -h
 ```
 
-VSCode insiders 用的是 code-insiders.cmd，这个名字在命令行中不大方便，换一个名字
+VSCode insiders 用的是 `code-insiders.cmd`, 这个名字在命令行中不大方便，换一个名字。
+打开 [PowerShell console](/powershell/console/) 运行
 
-```sh
-cd /d "C:\Program Files\Microsoft VS Code Insiders\bin"
-copy code-insiders.cmd codeb.cmd # 在系统目录中操作需要管理员权限
-codeb -h
+```powershell
+cd "C:\Program Files\Microsoft VS Code Insiders\bin"
+# 在系统目录中操作需要管理员权限
+# 因为只用 VSCode insiders，所以干脆命名为 code
+cp code-insiders.cmd code.cmd
+code -h
 ```
 
 ## Portable

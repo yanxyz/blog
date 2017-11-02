@@ -13,7 +13,7 @@
 
 ## 界面
 
-![](/uploads/jetbrains/gui-1.png)
+![](images/gui-1.png)
 
 [文档](https://www.jetbrains.com/webstorm/help/webstorm-editor-guided-tour.html)
 
@@ -77,11 +77,11 @@
 
 添加 Total Commander:
 
-![](/uploads/jetbrains/tc.png)
+![](images/tc.png)
 
 添加 Sublime Text，[Is there a way to connect Intellij IDEA to Sublime Text on Mac OS X?](http://stackoverflow.com/questions/16130586/)
 
-![](/uploads/jetbrains/sublimetext.png)
+![](images/sublimetext.png)
 
 ## 特色功能
 

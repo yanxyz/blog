@@ -1,7 +1,3 @@
----
-permalink: /cmd/findstr/
----
-
 # findstr
 
 [findstr](https://technet.microsoft.com/en-us/library/bb490907.aspx)

@@ -13,7 +13,7 @@ Insider 是预览版本，只有 Windows Insider Preview 可以使用。
 
 查看 Edge 的版本，代开 Edge 的设置面板，滚动到最底部可以看到：
 
-![](/uploads/edge/version.png)
+![](images/version.png)
 
 Edge 使用新的排版引擎 EdgeHTML，目前在统计浏览器兼容性使用的是 EdgeHTML 的版本。
 

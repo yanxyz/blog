@@ -1,8 +1,3 @@
----
-permalink: /powershell/syntax/
----
-
-
 [原文档](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
 
 ```

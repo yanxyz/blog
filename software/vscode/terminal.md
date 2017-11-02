@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/terminal/
----
-
 # VSCode Terminal
 
 `Ctrl+\`` 打开 terminal。将光标置于状态栏与编辑区的分界处，光标变为上下箭头，向上拉动可以拉起底部面板。

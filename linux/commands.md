@@ -1,7 +1,3 @@
----
-permalink: /linux/commands/
----
-
 # Linux 常用命令
 
 `man cp`

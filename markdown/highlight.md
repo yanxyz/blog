@@ -1,7 +1,3 @@
----
-permalink: /markdown/highlight/
----
-
 现在 Markdown 引擎都支持 fenced code block，可以指定 language
 
 ```

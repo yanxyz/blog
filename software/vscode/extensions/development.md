@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/extension/development/
----
-
 # 开发扩展
 
 [Overview](https://code.visualstudio.com/docs/extensions/overview)

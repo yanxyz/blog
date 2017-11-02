@@ -9,7 +9,11 @@ Windows 命令提示符（Command Prompt）
 - [bat](bat.md)
 - [环境变量](env.md)
 
-Utils:
+Tasks
+
+- [文件和目录的基本操作](tasks.md)
+
+Utils
 
 - [findstr](utils/findstr.md)
 - [mklink](utils/mklink.md)

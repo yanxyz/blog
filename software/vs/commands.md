@@ -1,7 +1,3 @@
----
-permalink: /software/vs/commands/
----
-
 # Visual Studio Commands
 
 [Visual Studio Commands](https://docs.microsoft.com/en-us/visualstudio/ide/reference/visual-studio-commands)
@@ -12,7 +8,7 @@ permalink: /software/vs/commands/
 - Immediate window
 - Find/Command box，添加到工具栏
 
-![](/uploads/vs/find-command-box.png)
+![](images/find-command-box.png)
 
 用 `>` 表示命令；`^` 转义
 

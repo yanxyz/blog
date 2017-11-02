@@ -1,7 +1,3 @@
----
-permalink: /software/vs/extensions/
----
-
 # Visual Studio 扩展
 
 [Finding and Using Visual Studio Extensions](https://msdn.microsoft.com/en-us/library/dd293638.aspx)
@@ -57,5 +53,5 @@ Structure Visualizer 颜色不协调，关闭。
 
 编辑区有一个白条，黑色主题下不大协调，它其实是 VsVim Command Margin。在 `Quick Launch > @opt color` 配置中修改配色：
 
-![](/uploads/vs/vsvim-command-margin.png)
+![](images/vsvim-command-margin.png)
 

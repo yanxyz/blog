@@ -1,7 +1,3 @@
----
-permalink: /software/vscode/extension/
----
-
 # VSCode 扩展
 
 点击 view bar 中扩展图标，在这里管理插件。

@@ -1,7 +1,3 @@
----
-permalink: /windows/win10/install/
----
-
 # 安装 Windows 10
 
 新电脑建议趁着重装系统的机会将磁盘转为 GPT。

@@ -1,7 +1,3 @@
----
-permalink: /software/sublimetext/plugins/overview/
----
-
 # 开发插件
 
 文档

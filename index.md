@@ -1,20 +1,34 @@
 # Ivan Yan 的笔记
 
-- [HTML](https://yanxyz.github.io/html/)
-- [CSS](https://yanxyz.github.io/css/)
-- [JavaScript](https://yanxyz.github.io/javascript/)
-- [Node.js](https://yanxyz.github.io/nodejs/)
-- [TypeScript](https://yanxyz.github.io/typescript/)
-- [C#](https://yanxyz.github.io/csharp/)
-- [PowerShell](https://yanxyz.github.io/powershell/)
-<!-- - [PHP](https://yanxyz.github.io/php/) -->
-<!-- - [Python](https://yanxyz.github.io/python/) -->
-- [Ruby](ruby/index.md)
-- [Markdown](markdown/index.md)
-- [Git](git/index.md)
-- [Github](github/index.md)
+前端
+
+- [HTML](/html/)
+- [CSS](/css/)
+- [JavaScript](/javascript/)
+- [Node.js](/nodejs/)
+- [TypeScript](/typescript/)
+
+其它程序语言
+
+- [C#](/csharp/)
+<!-- - [PHP](/php/) -->
+- [Python](/python/)
+
+脚本
+
 - [Shell](shell/index.md)
-- [Software](software/index.md)
-- [Windows](windows/index.md)
+- [PowerShell](/powershell/)
 - [CMD](cmd/index.md)
-- [VBScript](https://yanxyz.github.io/vbscript/)
+- [VBScript](/vbscript/)
+
+工具
+
+- [Github & Git](/github/)
+- [Chrome & DevTools](/chrome/)
+- [Software](software/index.md)
+  - [VSCode](software/vscode/index.md)
+- [Windows](windows/index.md)
+  - [我的 Windows 软件清单](windows/list.md)
+- [Linux](linux/index.md)
+- [Markdown](markdown/index.md)
+- [Ruby](ruby/index.md)
