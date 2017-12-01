@@ -1,0 +1,11 @@
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile
+Gemfile.lock
+
+_images
+_scripts
+_temp
+.vscode
+*.sublime-*
